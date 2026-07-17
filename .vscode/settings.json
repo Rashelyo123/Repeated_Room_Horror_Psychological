@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TA_FIX_RIPITED_ROOM.sln"
+    "dotnet.defaultSolution": "Repeated_Room_Horror_Psychological.sln"
 }
