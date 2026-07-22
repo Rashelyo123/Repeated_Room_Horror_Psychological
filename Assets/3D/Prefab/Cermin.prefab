@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9121489241665595770}
   - component: {fileID: 8569819354116119149}
   - component: {fileID: 8778089307204547150}
+  - component: {fileID: 7806915939037076450}
   m_Layer: 0
   m_Name: Cermin
   m_TagString: Untagged
@@ -84,6 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7806915939037076450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615832046980703569}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.9562568, y: 1.7966913, z: 0.14009449}
+  m_Center: {x: -8.664423e-25, y: 0.89870435, z: -0.054834895}
 --- !u!1 &8365019786701676912
 GameObject:
   m_ObjectHideFlags: 0

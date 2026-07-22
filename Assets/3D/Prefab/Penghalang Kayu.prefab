@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 714831457668888903}
   - component: {fileID: 7488959037388142510}
   - component: {fileID: 3277792778174898435}
+  - component: {fileID: 2309926056015278952}
   m_Layer: 0
   m_Name: Penghalang Kayu
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2309926056015278952
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6434307803638110929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.038108826, y: 1.2819781, z: 1.8981934}
+  m_Center: {x: 0.002087593, y: 0.07198405, z: 0.062012672}

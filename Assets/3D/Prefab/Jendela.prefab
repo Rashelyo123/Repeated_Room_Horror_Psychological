@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 79761320734501178}
   - component: {fileID: 211099782302959150}
   - component: {fileID: 7739382074425495890}
+  - component: {fileID: -943234936416317290}
   m_Layer: 0
   m_Name: Jendela
   m_TagString: Untagged
@@ -86,6 +87,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-943234936416317290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451546890449901366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2367961, y: 1.8304315, z: 0.26062357}
+  m_Center: {x: 0.000000029802322, y: 0, z: 0}
 --- !u!1 &3537754427650410348
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,6 +119,7 @@ GameObject:
   - component: {fileID: 7959925832159586031}
   - component: {fileID: 340030486993367153}
   - component: {fileID: 8222331882823512954}
+  - component: {fileID: 511878501916870838}
   m_Layer: 0
   m_Name: Penutup Jendela
   m_TagString: Untagged
@@ -169,6 +192,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &511878501916870838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537754427650410348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.49218273, y: 1.678961, z: 0.27824974}
+  m_Center: {x: -0.23880482, y: -0.000000029802322, z: 0.130229}
 --- !u!1 &3673139043157674488
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +307,7 @@ GameObject:
   - component: {fileID: 442480806992095726}
   - component: {fileID: 6729895146490362517}
   - component: {fileID: 586414880602254217}
+  - component: {fileID: 5346673873815174838}
   m_Layer: 0
   m_Name: Penutup Jendela.001
   m_TagString: Untagged
@@ -335,3 +380,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5346673873815174838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436638213253329529}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.49218273, y: 1.678961, z: 0.27824974}
+  m_Center: {x: 0.23880506, y: -0.000000029802322, z: 0.130229}
