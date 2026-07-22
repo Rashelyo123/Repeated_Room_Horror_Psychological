@@ -334,7 +334,8 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
-  - Human Element
+  - Human_Element
+  - SFX_Loop
   - Stinger
   BanksToLoad: []
   LiveUpdatePort: 9264
