@@ -48030,7 +48030,7 @@ PrefabInstance:
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: gravity
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
@@ -48045,7 +48045,7 @@ PrefabInstance:
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: walkingSpeed
-      value: 1.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
@@ -48157,7 +48157,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8313750130505664423, guid: 2d907c5bb39585244ad8221a4b488062, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
