@@ -160,38 +160,33 @@ public class PlayerController : MonoBehaviour
         );
     }
 
-    private void UpdateFootstepAudio(float speedX, float speedY, bool isRunning)
-    {
-        // Deteksi pergerakan yang stabil dengan threshold > 0.1f
-        bool isMoving = (Mathf.Abs(speedX) > 0.1f || Mathf.Abs(speedY) > 0.1f) && characterController.isGrounded;
+    private float stopTimer = 0f;
 
-        if (!isMoving)
-        {
-            wasMovingLastFrame = false;
-            footstepTimer = 0f;
+    private void UpdateFootstepAudio(float speedX, float speedY, bool isRunning) {
+        // Hitung kecepatan horizontal asli karakter (mengabaikan sumbu Y/gravitasi)
+        Vector3 horizontalVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
+
+        // Player hanya dianggap jalan jika kecepatan mendatarnya > 0.5 dan menempel tanah
+        bool isMoving = horizontalVelocity.magnitude > 0.5f && characterController.isGrounded;
+
+        if (!isMoving) {
+            stopTimer += Time.deltaTime;
+            // Hanya reset timer jika player benar-benar berhenti lebih dari 0.2 detik
+            if (stopTimer > 0.2f) {
+                footstepTimer = 0f;
+            }
             return;
         }
+
+        // Reset timer berhenti jika sedang bergerak
+        stopTimer = 0f;
 
         float currentInterval = isRunning ? footstepIntervalRun : footstepIntervalWalk;
 
-        // Jika baru mulai melangkah (frame pertama)
-        if (!wasMovingLastFrame)
-        {
-            if (!footstepEvent.IsNull)
-            {
-                RuntimeManager.PlayOneShotAttached(footstepEvent, gameObject);
-            }
-            footstepTimer = currentInterval;
-            wasMovingLastFrame = true;
-            return;
-        }
-
-        // Hitung mundur timer sesuai interval jalan/lari saat W ditahan
+        // Hitung mundur jeda antar langkah
         footstepTimer -= Time.deltaTime;
-        if (footstepTimer <= 0f)
-        {
-            if (!footstepEvent.IsNull)
-            {
+        if (footstepTimer <= 0f) {
+            if (!footstepEvent.IsNull) {
                 RuntimeManager.PlayOneShotAttached(footstepEvent, gameObject);
             }
             footstepTimer = currentInterval;
