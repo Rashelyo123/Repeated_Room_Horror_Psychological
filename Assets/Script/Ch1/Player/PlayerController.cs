@@ -1,14 +1,21 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
-[RequireComponent(typeof(CharacterController), typeof(AudioSource))]
+[RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float walkingSpeed = 7.5f;
     [SerializeField] private float runningSpeed = 11.5f;
     [SerializeField] private float gravity = 20.0f;
+
+    [Header("FMOD Event References")]
+    // Menggunakan EventReference bawaan FMOD modern
+    public EventReference footstepEvent;
+    [SerializeField] private float footstepIntervalWalk = 0.5f;
+    [SerializeField] private float footstepIntervalRun = 0.3f;
 
     [Header("Camera Settings")]
     public Camera playerCamera;
@@ -26,9 +33,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip wakeUpSound;
 
     private CharacterController characterController;
-    private AudioSource footstepAudioSource;
     private AudioSource flashlightAudioSource;
     private AudioSource wakeUpAudioSource;
+
+    private float footstepTimer;
+    private bool wasMovingLastFrame = false; // Mencegah spamming audio saat tombol ditahan
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX;
@@ -55,8 +64,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            playerWakeUpAnimator.enabled = false;
-            footstepAudioSource.enabled = true;
+            if (playerWakeUpAnimator != null) playerWakeUpAnimator.enabled = false;
             canMove = true;
         }
     }
@@ -73,7 +81,6 @@ public class PlayerController : MonoBehaviour
     private void InitializeComponents()
     {
         characterController = GetComponent<CharacterController>();
-        footstepAudioSource = GetComponent<AudioSource>();
         flashlightAudioSource = gameObject.AddComponent<AudioSource>();
         wakeUpAudioSource = gameObject.AddComponent<AudioSource>();
     }
@@ -86,7 +93,7 @@ public class PlayerController : MonoBehaviour
 
     private void SetupInitialState()
     {
-        flashlight.enabled = isFlashlightOn;
+        if (flashlight != null) flashlight.enabled = isFlashlightOn;
         targetRotationY = transform.eulerAngles.y;
     }
 
@@ -101,7 +108,7 @@ public class PlayerController : MonoBehaviour
         float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
 
-        UpdateFootstepAudio(curSpeedX, curSpeedY);
+        UpdateFootstepAudio(curSpeedX, curSpeedY, isRunning);
         UpdateCameraShake(curSpeedX, curSpeedY);
 
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
@@ -119,8 +126,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             isFlashlightOn = !isFlashlightOn;
-            flashlight.enabled = isFlashlightOn;
-            flashlightAudioSource.PlayOneShot(flashlightSound);
+            if (flashlight != null) flashlight.enabled = isFlashlightOn;
+
+            // Aman dari NullReferenceException jika AudioClip belum dimasukkan
+            if (flashlightSound != null && flashlightAudioSource != null)
+            {
+                flashlightAudioSource.PlayOneShot(flashlightSound);
+            }
         }
     }
 
@@ -130,11 +142,14 @@ public class PlayerController : MonoBehaviour
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
 
         Quaternion cameraTargetRotation = Quaternion.Euler(rotationX, 0, 0);
-        playerCamera.transform.localRotation = Quaternion.Slerp(
-            playerCamera.transform.localRotation,
-            cameraTargetRotation,
-            Time.deltaTime * smoothSpeed
-        );
+        if (playerCamera != null)
+        {
+            playerCamera.transform.localRotation = Quaternion.Slerp(
+                playerCamera.transform.localRotation,
+                cameraTargetRotation,
+                Time.deltaTime * smoothSpeed
+            );
+        }
 
         targetRotationY += Input.GetAxis("Mouse X") * lookSpeed;
         Quaternion playerTargetRotation = Quaternion.Euler(0, targetRotationY, 0);
@@ -145,36 +160,70 @@ public class PlayerController : MonoBehaviour
         );
     }
 
-    private void UpdateFootstepAudio(float speedX, float speedY)
+    private void UpdateFootstepAudio(float speedX, float speedY, bool isRunning)
     {
-        if ((speedX != 0 || speedY != 0) && !footstepAudioSource.isPlaying)
+        // Deteksi pergerakan yang stabil dengan threshold > 0.1f
+        bool isMoving = (Mathf.Abs(speedX) > 0.1f || Mathf.Abs(speedY) > 0.1f) && characterController.isGrounded;
+
+        if (!isMoving)
         {
-            footstepAudioSource.Play();
+            wasMovingLastFrame = false;
+            footstepTimer = 0f;
+            return;
         }
-        else if (speedX == 0 && speedY == 0)
+
+        float currentInterval = isRunning ? footstepIntervalRun : footstepIntervalWalk;
+
+        // Jika baru mulai melangkah (frame pertama)
+        if (!wasMovingLastFrame)
         {
-            footstepAudioSource.Stop();
+            if (!footstepEvent.IsNull)
+            {
+                RuntimeManager.PlayOneShotAttached(footstepEvent, gameObject);
+            }
+            footstepTimer = currentInterval;
+            wasMovingLastFrame = true;
+            return;
+        }
+
+        // Hitung mundur timer sesuai interval jalan/lari saat W ditahan
+        footstepTimer -= Time.deltaTime;
+        if (footstepTimer <= 0f)
+        {
+            if (!footstepEvent.IsNull)
+            {
+                RuntimeManager.PlayOneShotAttached(footstepEvent, gameObject);
+            }
+            footstepTimer = currentInterval;
         }
     }
 
     private void UpdateCameraShake(float speedX, float speedY)
     {
-        float speed = new Vector3(speedX, 0, speedY).magnitude;
-        cameraShake.SetFloat("Speed", speed);
+        if (cameraShake != null)
+        {
+            float speed = new Vector3(speedX, 0, speedY).magnitude;
+            cameraShake.SetFloat("Speed", speed);
+        }
     }
 
     private IEnumerator PlayWakeUpSequence()
     {
-        footstepAudioSource.enabled = false;
         canMove = false;
 
-        playerWakeUpAnimator.enabled = true;
-        wakeUpAudioSource.PlayOneShot(wakeUpSound);
+        if (playerWakeUpAnimator != null)
+        {
+            playerWakeUpAnimator.enabled = true;
+            if (wakeUpSound != null && wakeUpAudioSource != null)
+            {
+                wakeUpAudioSource.PlayOneShot(wakeUpSound);
+            }
 
-        yield return new WaitForSeconds(playerWakeUpAnimator.GetCurrentAnimatorStateInfo(0).length);
+            yield return new WaitForSeconds(playerWakeUpAnimator.GetCurrentAnimatorStateInfo(0).length);
 
-        playerWakeUpAnimator.enabled = false;
-        footstepAudioSource.enabled = true;
+            playerWakeUpAnimator.enabled = false;
+        }
+
         canMove = true;
     }
 }
