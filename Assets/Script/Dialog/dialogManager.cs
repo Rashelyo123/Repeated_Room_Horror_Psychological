@@ -16,7 +16,7 @@ public class DialogManager : MonoBehaviour
     private string currentCharacterName;
     private bool isDialogActive;
 
-    private void Start()
+    private void Awake()
     {
         canvasGroup = dialogPanel.GetComponent<CanvasGroup>();
         if (canvasGroup == null)
