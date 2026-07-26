@@ -35,7 +35,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9997785, z: -0, w: -0.021047052}
   m_LocalPosition: {x: 0.45, y: 5.55, z: 49.56}
-  m_LocalScale: {x: 0.61, y: 0.98767394, z: 0.5023159}
+  m_LocalScale: {x: 0.6100001, y: 0.987674, z: 0.5023159}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4347622246307992232}
@@ -152,16 +152,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94264f36b0081df4a84ad2978dcbc8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 3
-  runningSpeed: 4
-  gravity: 20
+  walkingSpeed: 1.5
+  runningSpeed: 3
+  gravity: 50
+  footstepEvent:
+    Guid:
+      Data1: -2031924682
+      Data2: 1287389443
+      Data3: 680979597
+      Data4: -399713739
+    Path: event:/SFX_Mechanic/Footsteps
+  footstepIntervalWalk: 0.5
+  footstepIntervalRun: 0.3
   playerCamera: {fileID: 8111807174635959796}
   lookSpeed: 2
   smoothSpeed: 10
   lookXLimit: 75
   flashlight: {fileID: 7169581246438102766}
   flashlightSound: {fileID: 8300000, guid: 346ece4e09cea4141900d07b81792286, type: 3}
-  cameraShake: {fileID: 1710100942306407209}
+  cameraShake: {fileID: 0}
   playerWakeUpAnimator: {fileID: 1009639942556318030}
   wakeUpSound: {fileID: 8300000, guid: b90fe4dbcbc056642a43f55706f0856c, type: 3}
 --- !u!82 &44437109344954823
@@ -171,7 +180,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3091501331854198615}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5e71c9c531fce67469d84759c3a925c6, type: 3}
@@ -184,7 +193,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0149784
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -270,7 +279,7 @@ Animator:
   m_GameObject: {fileID: 3091501331854198615}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe05389af133c5a43870d9a8de008995, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7753ad792b5e1334bac4160c2b8a375f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -294,9 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Distance: 4
-  Mask:
+  interactionBlockMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 9
 --- !u!114 &7151412170402321294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +330,6 @@ GameObject:
   - component: {fileID: 4347622246307992232}
   - component: {fileID: 8111807174635959796}
   - component: {fileID: 4051090353219128267}
-  - component: {fileID: 1710100942306407209}
   - component: {fileID: -6476563505853424940}
   - component: {fileID: 4689446484867327866}
   m_Layer: 0
@@ -340,7 +348,7 @@ Transform:
   m_GameObject: {fileID: 7169013901915320953}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.58500004, z: 0}
+  m_LocalPosition: {x: 0, y: 0.58500004, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -378,9 +386,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 70.3
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -406,27 +414,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7169013901915320953}
   m_Enabled: 1
---- !u!95 &1710100942306407209
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7169013901915320953}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cff65af8d13b4da46a7a22c415d58c1a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &-6476563505853424940
 MonoBehaviour:
   m_ObjectHideFlags: 0
