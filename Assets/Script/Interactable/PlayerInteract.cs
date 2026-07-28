@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
     [Header("Interaction Settings")]
-    [SerializeField] private float Distance = 3f;
-    [SerializeField] private LayerMask interactionBlockMask; // isi SEMUA layer solid: Interactable + Wall/Environment/Furniture, dll
+    [SerializeField] private float distance = 3f;
+    [SerializeField] private LayerMask interactionBlockMask;
 
     private Camera cam;
     private PlayerUI playerUI;
@@ -22,26 +20,27 @@ public class PlayerInteract : MonoBehaviour
         playerUI?.UpdateText(string.Empty);
 
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
-        Debug.DrawRay(ray.origin, ray.direction * Distance, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * distance, Color.red);
 
-        if (Physics.Raycast(ray, out RaycastHit hit, Distance, interactionBlockMask, QueryTriggerInteraction.Ignore))
+        if (Physics.Raycast(ray, out RaycastHit hit, distance, interactionBlockMask, QueryTriggerInteraction.Ignore))
         {
-            // objek pertama yang kena secara fisik, apapun itu (bisa laci, tembok, atau si kunci)
             if (hit.collider.TryGetComponent<Interactable>(out var interactable))
             {
-                playerUI.UpdateText(interactable.PromptMessage);
+                // Kalau CanInteract false (misal InteractOnce udah kepake), gak usah tampilin prompt
+                if (interactable.CanInteract)
+                    playerUI.UpdateText(interactable.PromptMessage);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     interactable.BaseInteract();
 
+                    if (interactable.HideUIAfterInteract)
+                        playerUI.UpdateText(string.Empty);
+
                     if (interactable is IDialogTrigger dialogTrigger)
-                    {
                         dialogTrigger.TriggerDialog();
-                    }
                 }
             }
-            // kalau yang kena BUKAN Interactable (misal laci tertutup / tembok), otomatis nggak ada prompt
         }
     }
 }

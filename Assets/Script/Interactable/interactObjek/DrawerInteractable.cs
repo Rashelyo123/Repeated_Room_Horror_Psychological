@@ -9,7 +9,8 @@ public class DrawerInteractable : Interactable
     [SerializeField] private AnimationCurve easeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     [Header("FMOD (opsional)")]
-    [SerializeField] private FMODUnity.EventReference drawerSound;
+    [SerializeField] private FMODUnity.EventReference openSound;
+    [SerializeField] private FMODUnity.EventReference closeSound;
 
     private Vector3 closedLocalPos;
     private bool isOpen = false;
@@ -20,15 +21,12 @@ public class DrawerInteractable : Interactable
         base.Interact();
         if (CanInteract)
         {
-            // TriggerDialog();
             ToggleDrawer();
-
         }
     }
 
     private void Awake()
     {
-        // posisi awal (tertutup) diambil otomatis dari posisi laci di scene saat game mulai
         closedLocalPos = transform.localPosition;
     }
 
@@ -36,13 +34,23 @@ public class DrawerInteractable : Interactable
     {
         if (isAnimating) return;
         StopAllCoroutines();
-        Vector3 target = isOpen ? closedLocalPos : openLocalPosition;
-        StartCoroutine(AnimateDrawer(target));
-        isOpen = !isOpen;
 
-        if (!drawerSound.IsNull)
+        bool willOpen = !isOpen; // arah yang akan dituju
+        Vector3 target = willOpen ? openLocalPosition : closedLocalPos;
+
+        StartCoroutine(AnimateDrawer(target));
+        isOpen = willOpen;
+
+        PlayDrawerSound(willOpen);
+    }
+
+    private void PlayDrawerSound(bool opening)
+    {
+        FMODUnity.EventReference soundToPlay = opening ? openSound : closeSound;
+
+        if (!soundToPlay.IsNull)
         {
-            FMODUnity.RuntimeManager.PlayOneShotAttached(drawerSound, gameObject);
+            FMODUnity.RuntimeManager.PlayOneShotAttached(soundToPlay, gameObject);
         }
     }
 

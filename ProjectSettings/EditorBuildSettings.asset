@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Loop2.unity
+    guid: 798abdce3c02f834da893c200790db41
+  - enabled: 1
+    path: Assets/Scenes/Loop3.unity
+    guid: b90cc8f56aff27642a5c81918a637c7c
+  - enabled: 1
+    path: Assets/Scenes/Loop4.unity
+    guid: 1280d2a75fe5dd247bdbdf875c5dc860
   m_configObjects: {}

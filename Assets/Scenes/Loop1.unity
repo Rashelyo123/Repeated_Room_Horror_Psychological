@@ -555,6 +555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2187,6 +2189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2258,6 +2262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2287,7 +2293,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -3483,11 +3496,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: Interatc
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
   isPlayerMissionComplete: 0
-  SCENE_NAME: Loop1
+  SCENE_NAME: Loop2
   doorLocked: {fileID: 0}
 --- !u!114 &308472876
 MonoBehaviour:
@@ -3503,6 +3518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -4374,6 +4391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -6581,6 +6600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -6610,7 +6631,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -7836,6 +7864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -7865,7 +7895,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -8162,6 +8199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -8191,13 +8230,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
     Guid:
-      Data1: 115804599
-      Data2: 1198102241
-      Data3: 1815280049
-      Data4: -456857478
-    Path: event:/SFX_Mechanic/UnlockDoor
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &693257188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1940847119502544334, guid: f287716635fddd54fa34e7ea3eab30e5,
@@ -24449,6 +24495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -24691,6 +24739,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -24720,7 +24770,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -25421,6 +25478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -25450,13 +25509,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
     Guid:
-      Data1: 115804599
-      Data2: 1198102241
-      Data3: 1815280049
-      Data4: -456857478
-    Path: event:/SFX_Mechanic/UnlockDoor
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &1185140224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26858,7 +26924,8 @@ PrefabInstance:
       value: -0.00000166893
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4884332919914143419, guid: f287716635fddd54fa34e7ea3eab30e5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5184759152428664177, guid: f287716635fddd54fa34e7ea3eab30e5,
@@ -32849,6 +32916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -34964,6 +35033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -35250,6 +35321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -35279,7 +35352,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -35517,6 +35597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -35546,7 +35628,14 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
     Guid:
       Data1: 0
       Data2: 0
@@ -35903,6 +35992,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -35932,13 +36023,20 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  drawerSound:
+  openSound:
     Guid:
-      Data1: 115804599
-      Data2: 1198102241
-      Data3: 1815280049
-      Data4: -456857478
-    Path: event:/SFX_Mechanic/UnlockDoor
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &2095004119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9073402982263595056, guid: 6d3c856d935d0f44ea1104f066813bd5,
@@ -36869,6 +36967,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   PromptMessage: Pencet  E bos
+  HideUIAfterInteract: 0
+  InteractOnce: 0
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -38740,7 +38840,8 @@ PrefabInstance:
       value: -0.00000166893
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4884332919914143419, guid: f287716635fddd54fa34e7ea3eab30e5, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1940847119502544334, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}

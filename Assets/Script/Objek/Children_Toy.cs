@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Start_Level : MonoBehaviour
+public class Children_Toy : MonoBehaviour
 {
     [SerializeField] private DialogData dialogData;
 
-    private void Start()
+
+    public void StartDialogChildrenToy()
     {
-        if (dialogData != null && SceneManager.GetActiveScene().name != "Loop1")
+        if (dialogData != null)
         {
             DialogManager.TriggerDialog(dialogData);
         }
     }
-
 }

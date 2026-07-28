@@ -120,7 +120,9 @@ GameObject:
   - component: {fileID: 7248851796248593762}
   - component: {fileID: 6711117268632747721}
   - component: {fileID: 5957069358693849178}
-  m_Layer: 0
+  - component: {fileID: 2222597551892960575}
+  - component: {fileID: 6387127689695183577}
+  m_Layer: 3
   m_Name: laci1.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +138,7 @@ Transform:
   m_GameObject: {fileID: 5184759152428664177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29051542, y: 0.9038773, z: 0.5950184}
+  m_LocalPosition: {x: -0.279, y: 0.9038773, z: 0.595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -211,8 +213,126 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.77086306, y: 0.1959418, z: 0.50012493}
-  m_Center: {x: 0.21005726, y: -0.0026696324, z: -0.0000014305115}
+  m_Size: {x: 0.084618464, y: 0.1959418, z: 0.5001254}
+  m_Center: {x: -0.13443579, y: -0.0026696324, z: -0.00000166893}
+--- !u!114 &2222597551892960575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184759152428664177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.604, y: 0.9038773, z: 0.5950184}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
+--- !u!114 &6387127689695183577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5184759152428664177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.56, y: 0.9038773, z: 0.595}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
 --- !u!1 &5576590413128894620
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +345,9 @@ GameObject:
   - component: {fileID: 5684342487727445832}
   - component: {fileID: 3176457567735510399}
   - component: {fileID: 7648813789774319773}
-  m_Layer: 0
+  - component: {fileID: 5725972524409791195}
+  - component: {fileID: 1248898511202460525}
+  m_Layer: 3
   m_Name: laci3.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +363,7 @@ Transform:
   m_GameObject: {fileID: 5576590413128894620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29222798, y: 0.9038773, z: -0.593925}
+  m_LocalPosition: {x: -0.281, y: 0.9038773, z: -0.594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -316,8 +438,126 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.77394676, y: 0.19594187, z: 0.5001254}
-  m_Center: {x: 0.21022797, y: -0.0026696026, z: 0.00000023841858}
+  m_Size: {x: 0.084618464, y: 0.1959418, z: 0.5001254}
+  m_Center: {x: -0.13443579, y: -0.0026696324, z: -0.00000166893}
+--- !u!114 &5725972524409791195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5576590413128894620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.604, y: 0.9038773, z: -0.593925}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
+--- !u!114 &1248898511202460525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5576590413128894620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.56, y: 0.9038773, z: -0.594}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
 --- !u!1 &7363135455101544349
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +570,9 @@ GameObject:
   - component: {fileID: 1089485372742855389}
   - component: {fileID: 8533336256926046051}
   - component: {fileID: 3162558865086403731}
-  m_Layer: 0
+  - component: {fileID: 5849941742063421174}
+  - component: {fileID: 5746508044790181681}
+  m_Layer: 3
   m_Name: laci2.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,10 +588,11 @@ Transform:
   m_GameObject: {fileID: 7363135455101544349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29222846, y: 0.9038773, z: 0.00054836273}
+  m_LocalPosition: {x: -0.281, y: 0.9038773, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4899450926271403575}
   m_Father: {fileID: 4361055820604713657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1089485372742855389
@@ -421,5 +664,289 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7739463, y: 0.1959418, z: 0.5001254}
-  m_Center: {x: 0.2102282, y: -0.0026696324, z: -0.00000166893}
+  m_Size: {x: 0.084618464, y: 0.1959418, z: 0.5001254}
+  m_Center: {x: -0.13443579, y: -0.0026696324, z: -0.00000166893}
+--- !u!114 &5849941742063421174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7363135455101544349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: buka
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.604, y: 0.9038773, z: 0.0005483627}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
+--- !u!114 &5746508044790181681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7363135455101544349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aae9536e6b17b24181722ad1af12c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  openLocalPosition: {x: -0.56, y: 0.9038773, z: 0.001}
+  openDuration: 0.5
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
+  closeSound:
+    Guid:
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
+--- !u!1001 &7269393171821035282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1940847119502544334}
+    m_Modifications:
+    - target: {fileID: 1297458547402584712, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 59bb6ce134af83b4f9da9812abda5327, type: 2}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0663
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0165
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_Name
+      value: Kunci
+      objectReference: {fileID: 0}
+    - target: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8712933767497613142}
+    - targetCorrespondingSourceObject: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011997662928729227}
+  m_SourcePrefab: {fileID: 100100000, guid: a9b92285a54d1564791376adb8f7021d, type: 3}
+--- !u!1 &4884332919914143419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7269393171821035282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &8712933767497613142
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884332919914143419}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: a145f8237f7887f4782f1bde8376dc94, type: 3}
+--- !u!114 &2011997662928729227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884332919914143419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1514ae893f5ec74a8ad9386c3595ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: Pencet  E bos
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4884332919914143419}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PintuAkhir, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onPickUpSound: {fileID: 0}
+  dialogData: {fileID: 0}
+  Complete: {fileID: 0}
+--- !u!4 &4899450926271403575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7269393171821035282}
+  m_PrefabAsset: {fileID: 0}
