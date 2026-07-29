@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class ItemInspectionController : MonoBehaviour
 {
@@ -6,7 +8,13 @@ public class ItemInspectionController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Camera playerCamera;
-    [SerializeField] private GameObject inspectUI; // UI kecil, misal teks "Klik & drag utk putar, ESC utk keluar"
+    [SerializeField] private GameObject inspectUI;
+
+    [Header("Blur Effect")]
+    [SerializeField] private Volume inspectionBlurVolume;
+    [SerializeField] private float blurFadeDuration = 0.3f;
+    [SerializeField] private float targetBlurWeight = 1f;
+    private DepthOfField dofOverride;
 
     [Header("Player Lock")]
     [SerializeField] private MonoBehaviour playerController;
@@ -14,11 +22,18 @@ public class ItemInspectionController : MonoBehaviour
 
     private WorldItemInspectable currentItem;
     private bool isInspecting = false;
+    private Coroutine blurRoutine;
 
     private void Awake()
     {
         Instance = this;
         if (inspectUI != null) inspectUI.SetActive(false);
+
+        if (inspectionBlurVolume != null)
+        {
+            inspectionBlurVolume.weight = 0f;
+            inspectionBlurVolume.profile.TryGet(out dofOverride); // <-- ambil reference DoF dari Profile
+        }
     }
 
     public void BeginInspect(WorldItemInspectable item)
@@ -27,6 +42,12 @@ public class ItemInspectionController : MonoBehaviour
         currentItem.Setup(playerCamera);
         isInspecting = true;
 
+        // Set Focus Distance otomatis sesuai jarak object ke kamera
+        // if (dofOverride != null)
+        // {
+        //     dofOverride.focusDistance.value = item.GetInspectDistance(); // <-- baris baru
+        // }
+
         if (playerController != null) playerController.enabled = false;
         if (playerInteract != null) playerInteract.enabled = false;
         if (inspectUI != null) inspectUI.SetActive(true);
@@ -34,18 +55,19 @@ public class ItemInspectionController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+        FadeBlur(targetBlurWeight);
         StartCoroutine(currentItem.MoveToInspectPoint());
     }
 
     public void EndInspect()
     {
         if (currentItem == null) return;
-
         StartCoroutine(EndInspectRoutine());
     }
 
     private System.Collections.IEnumerator EndInspectRoutine()
     {
+        FadeBlur(0f);
         yield return StartCoroutine(currentItem.MoveBackToOriginal());
 
         if (playerController != null) playerController.enabled = true;
@@ -59,21 +81,47 @@ public class ItemInspectionController : MonoBehaviour
         currentItem = null;
     }
 
-    private void Update()
+    private void FadeBlur(float target)
     {
-        if (!isInspecting || currentItem == null) return;
+        if (inspectionBlurVolume == null) return;
+        if (blurRoutine != null) StopCoroutine(blurRoutine);
+        blurRoutine = StartCoroutine(FadeBlurRoutine(target));
+    }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+    private System.Collections.IEnumerator FadeBlurRoutine(float target)
+    {
+        float start = inspectionBlurVolume.weight;
+        float t = 0f;
+
+        while (t < blurFadeDuration)
         {
-            EndInspect();
-            return;
+            t += Time.unscaledDeltaTime;
+            inspectionBlurVolume.weight = Mathf.Lerp(start, target, t / blurFadeDuration);
+            yield return null;
         }
+        inspectionBlurVolume.weight = target;
+    }
 
-        if (Input.GetMouseButton(0))
+    private void LateUpdate()
+    {
+        if (isInspecting && currentItem != null)
         {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            currentItem.RotateByInput(mouseX, mouseY);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                EndInspect();
+                return;
+            }
+
+            if (Input.GetMouseButton(0))
+            {
+                float mouseX = Input.GetAxis("Mouse X");
+                float mouseY = Input.GetAxis("Mouse Y");
+                currentItem.RotateByInput(mouseX, mouseY);
+            }
+            else
+            {
+                currentItem.UpdateInspectPosition();
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ public class WorldItemInspectable : Interactable
 
     private bool isInspecting = false;
     private Camera playerCamera;
+    public float GetInspectDistance() => inspectLocalOffset.z;
 
     protected override void Interact()
     {
