@@ -588,6 +588,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -2222,6 +2250,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -3551,6 +3607,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -4424,6 +4508,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -6842,6 +6954,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8286727015646009475, guid: e911a651d9dcff6408632a364b216cce,
     type: 3}
   m_PrefabInstance: {fileID: 170494329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &617631124 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+    type: 3}
+  m_PrefabInstance: {fileID: 1881827265}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94264f36b0081df4a84ad2978dcbc8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &617631125 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1009639942556318030, guid: 2d907c5bb39585244ad8221a4b488062,
+    type: 3}
+  m_PrefabInstance: {fileID: 1881827265}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &625516857
 GameObject:
@@ -11190,6 +11320,94 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.23222351, y: 2.9977846, z: 2.9432747}
   m_Center: {x: -4.753026, y: -0.04419875, z: 2.4570036}
+--- !u!1001 &988896794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.509327
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8686166
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.524087
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324763908361590627, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506043902987213457, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].value
+      value: 
+      objectReference: {fileID: 617631125}
+    - target: {fileID: 1506043902987213457, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].value
+      value: 
+      objectReference: {fileID: 1506117002}
+    - target: {fileID: 4797995016451954529, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_Name
+      value: TIME_LINE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797995016451954529, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 617631124}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 444e187186035a54c87b1e1030887c5f, type: 3}
 --- !u!1 &993032199
 GameObject:
   m_ObjectHideFlags: 0
@@ -24528,6 +24746,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -26650,6 +26896,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1819789976304924047, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1506117002}
     - targetCorrespondingSourceObject: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       insertIndex: -1
@@ -29854,6 +30104,33 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1506117001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1819789976304924047, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1253151811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1506117002
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506117001}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &1512101225
 Mesh:
   m_ObjectHideFlags: 0
@@ -32949,6 +33226,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -33950,6 +34255,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3091501331854198615, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: m_Name
@@ -35066,6 +35376,34 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  doorPivot: {fileID: 0}
+  doorOpenAngle: 90
+  doorOpenDuration: 1
+  doorOpenCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
       Data1: 115804599
@@ -39238,3 +39576,4 @@ SceneRoots:
   - {fileID: 556360175}
   - {fileID: 225820006}
   - {fileID: 1248479456}
+  - {fileID: 988896794}

@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip flashlightSound;
 
     [Header("Animation Settings")]
-    [SerializeField] private Animator cameraShake;
+    //[SerializeField] private Animator cameraShake;
     [SerializeField] private Animator playerWakeUpAnimator;
     [SerializeField] private AudioClip wakeUpSound;
 
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX;
     private float targetRotationY;
-    private bool isFlashlightOn;
+    private bool isFlashlightOn = true;
     private bool canMove = true;
 
     public const string MAIN_SCENE_NAME = "CH1";
@@ -58,15 +58,15 @@ public class PlayerController : MonoBehaviour
     {
         SetupInitialState();
 
-        if (SceneManager.GetActiveScene().name == MAIN_SCENE_NAME || SceneManager.GetActiveScene().name == lastscene)
-        {
-            StartCoroutine(PlayWakeUpSequence());
-        }
-        else
-        {
-            if (playerWakeUpAnimator != null) playerWakeUpAnimator.enabled = false;
-            canMove = true;
-        }
+        // if (SceneManager.GetActiveScene().name == MAIN_SCENE_NAME || SceneManager.GetActiveScene().name == lastscene)
+        // {
+        //     StartCoroutine(PlayWakeUpSequence());
+        // }
+        // else
+        // {
+        //     if (playerWakeUpAnimator != null) playerWakeUpAnimator.enabled = false;
+        //     canMove = true;
+        // }
     }
 
     private void Update()
@@ -162,17 +162,20 @@ public class PlayerController : MonoBehaviour
 
     private float stopTimer = 0f;
 
-    private void UpdateFootstepAudio(float speedX, float speedY, bool isRunning) {
+    private void UpdateFootstepAudio(float speedX, float speedY, bool isRunning)
+    {
         // Hitung kecepatan horizontal asli karakter (mengabaikan sumbu Y/gravitasi)
         Vector3 horizontalVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
 
         // Player hanya dianggap jalan jika kecepatan mendatarnya > 0.5 dan menempel tanah
         bool isMoving = horizontalVelocity.magnitude > 0.5f && characterController.isGrounded;
 
-        if (!isMoving) {
+        if (!isMoving)
+        {
             stopTimer += Time.deltaTime;
             // Hanya reset timer jika player benar-benar berhenti lebih dari 0.2 detik
-            if (stopTimer > 0.2f) {
+            if (stopTimer > 0.2f)
+            {
                 footstepTimer = 0f;
             }
             return;
@@ -185,8 +188,10 @@ public class PlayerController : MonoBehaviour
 
         // Hitung mundur jeda antar langkah
         footstepTimer -= Time.deltaTime;
-        if (footstepTimer <= 0f) {
-            if (!footstepEvent.IsNull) {
+        if (footstepTimer <= 0f)
+        {
+            if (!footstepEvent.IsNull)
+            {
                 RuntimeManager.PlayOneShotAttached(footstepEvent, gameObject);
             }
             footstepTimer = currentInterval;
@@ -195,30 +200,30 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateCameraShake(float speedX, float speedY)
     {
-        if (cameraShake != null)
-        {
-            float speed = new Vector3(speedX, 0, speedY).magnitude;
-            cameraShake.SetFloat("Speed", speed);
-        }
+        // if (cameraShake != null)
+        // {
+        //     float speed = new Vector3(speedX, 0, speedY).magnitude;
+        //     cameraShake.SetFloat("Speed", speed);
+        // }
     }
 
-    private IEnumerator PlayWakeUpSequence()
-    {
-        canMove = false;
+    //     private IEnumerator PlayWakeUpSequence()
+    //     {
+    //         canMove = false;
 
-        if (playerWakeUpAnimator != null)
-        {
-            playerWakeUpAnimator.enabled = true;
-            if (wakeUpSound != null && wakeUpAudioSource != null)
-            {
-                wakeUpAudioSource.PlayOneShot(wakeUpSound);
-            }
+    //         if (playerWakeUpAnimator != null)
+    //         {
+    //             playerWakeUpAnimator.enabled = true;
+    //             if (wakeUpSound != null && wakeUpAudioSource != null)
+    //             {
+    //                 wakeUpAudioSource.PlayOneShot(wakeUpSound);
+    //             }
 
-            yield return new WaitForSeconds(playerWakeUpAnimator.GetCurrentAnimatorStateInfo(0).length);
+    //             yield return new WaitForSeconds(playerWakeUpAnimator.GetCurrentAnimatorStateInfo(0).length);
 
-            playerWakeUpAnimator.enabled = false;
-        }
+    //             playerWakeUpAnimator.enabled = false;
+    //         }
 
-        canMove = true;
-    }
+    //         canMove = true;
+    //     }
 }

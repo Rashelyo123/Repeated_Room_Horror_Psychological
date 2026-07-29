@@ -9,7 +9,7 @@ public class Start_Level : MonoBehaviour
 
     private void Start()
     {
-        if (dialogData != null && SceneManager.GetActiveScene().name != "Loop1")
+        if (dialogData != null && SceneManager.GetActiveScene().name == "Loop1")
         {
             DialogManager.TriggerDialog(dialogData);
         }

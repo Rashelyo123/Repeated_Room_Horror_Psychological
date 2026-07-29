@@ -25,6 +25,8 @@ public class DialogManager : MonoBehaviour
         }
         canvasGroup.alpha = 0; // Mulai dengan opacity 0 (tak terlihat)
         dialogPanel.SetActive(false); // Sembunyikan panel saat mulai
+        dialogText.text = "";
+        characterNameText.text = "";
     }
 
     public void StartDialog(DialogData dialogData)
