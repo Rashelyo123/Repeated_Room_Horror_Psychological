@@ -34320,6 +34320,11 @@ PrefabInstance:
       propertyPath: promptText
       value: 
       objectReference: {fileID: 548865452}
+    - target: {fileID: 7390631791600021119, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

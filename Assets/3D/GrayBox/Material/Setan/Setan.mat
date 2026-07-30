@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jendela
+  m_Name: Setan
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -105,7 +105,7 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -114,12 +114,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.24745458, g: 0.34920505, b: 0.3962264, a: 1}
-    - _Color: {r: 0.24745455, g: 0.34920502, b: 0.39622638, a: 1}
-    - _EmissionColor: {r: 0.8088281, g: 0.95834744, b: 1.2075462, a: 1}
+    - _BaseColor: {r: 0, g: 0.7565923, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.7565923, b: 1, a: 1}
+    - _EmissionColor: {r: 0.061324324, g: 0.093757726, b: 0.10188681, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1357856820603035862
+--- !u!114 &8892739696033204790
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
