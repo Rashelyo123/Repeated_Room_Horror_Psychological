@@ -92,6 +92,8 @@ public class DialogManager : MonoBehaviour
     private void EndDialog()
     {
         dialogPanel.SetActive(false);
+        dialogText.text = "";
+        characterNameText.text = "";
         currentDialog = null;
         currentDelays = null;
         currentLine = 0;

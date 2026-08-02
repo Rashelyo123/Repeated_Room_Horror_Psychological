@@ -677,6 +677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 1564646091}
   inspectUI: {fileID: 693419320}
+  inspectionBlurVolume: {fileID: 0}
+  blurFadeDuration: 0.3
+  targetBlurWeight: 1
   playerController: {fileID: 105570886}
   playerInteract: {fileID: 105570886}
 --- !u!4 &1290854037
@@ -953,6 +956,104 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1746123640
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5286423018462327921, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_Name
+      value: Kapak
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.406
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515884864122352136, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5286423018462327921, guid: aedbfe7c0f8c300499608ae9452192ac,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1746123642}
+  m_SourcePrefab: {fileID: 100100000, guid: aedbfe7c0f8c300499608ae9452192ac, type: 3}
+--- !u!1 &1746123641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5286423018462327921, guid: aedbfe7c0f8c300499608ae9452192ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1746123640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1746123642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746123641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f513591c94c97458bd2a33bdacb4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 1
+  InteractOnce: 1
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  heldAxePrefab: {fileID: 1746123641}
 --- !u!1 &1891570018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,3 +1291,4 @@ SceneRoots:
   - {fileID: 804890218}
   - {fileID: 1290854037}
   - {fileID: 1459936055}
+  - {fileID: 1746123640}
