@@ -148,6 +148,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destroyAfterPickup: 1
+  pickupSound:
+    Guid:
+      Data1: 1129205723
+      Data2: 1094471205
+      Data3: 867902603
+      Data4: 2080155071
+    Path: event:/SFX_Mechanic/GrabItem
 --- !u!65 &5144332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3983,6 +3990,13 @@ MonoBehaviour:
   isPlayerMissionComplete: 0
   SCENE_NAME: Loop4
   doorLocked: {fileID: 0}
+  doorLockedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &308472876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4438,15 +4452,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buku (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99912286
+      value: 0.016579883
       objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.041875616
+      value: 0.99986255
+      objectReference: {fileID: 0}
+    - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
@@ -4456,13 +4480,21 @@ PrefabInstance:
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 4.8
+      value: 178.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6741042308457027908, guid: 97531166ad4a7e342bb21fa10f1487b3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774463906}
+    - targetCorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774463905}
   m_SourcePrefab: {fileID: 100100000, guid: 97531166ad4a7e342bb21fa10f1487b3, type: 3}
 --- !u!4 &341100280 stripped
 Transform:
@@ -5865,18 +5897,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 466229749}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   moveDuration: 0.5
   inspectLocalOffset: {x: -0.04, y: -0.1, z: 0.59}
   inspectRotation: {x: 0, y: 0, z: 0}
@@ -6330,6 +6350,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destroyAfterPickup: 1
+  pickupSound:
+    Guid:
+      Data1: 1129205723
+      Data2: 1094471205
+      Data3: 867902603
+      Data4: 2080155071
+    Path: event:/SFX_Mechanic/GrabItem
 --- !u!1 &479039222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 677675709190677871, guid: ce206a05836760c45bb939f857962821,
@@ -6420,6 +6447,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destroyAfterPickup: 1
+  pickupSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!64 &482505933
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9861,6 +9895,100 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &774463903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 341100279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &774463904 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 341100279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &774463905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774463903}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30320647, y: 0.020290323, z: 0.18069638}
+  m_Center: {x: -0.0000002384186, y: 0.0017242179, z: -0.09034071}
+--- !u!114 &774463906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774463903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7d5da4b926a4044a7975d426fdae96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 1
+  InteractOnce: 1
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  coverTransform: {fileID: 774463904}
+  closedRotationX: -170
+  openRotationX: 5
+  openDuration: 0.78
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: -1959565795
+      Data2: 1331804452
+      Data3: 1349071747
+      Data4: -1127567377
+    Path: event:/SFX_Mechanic/Loop3_OpenBook
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &782972263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1606864500852656865, guid: 09f67c1e9813fa54aaf4b2979f0d2fdc,
@@ -28810,6 +28938,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destroyAfterPickup: 1
+  pickupSound:
+    Guid:
+      Data1: 1129205723
+      Data2: 1094471205
+      Data3: 867902603
+      Data4: 2080155071
+    Path: event:/SFX_Mechanic/GrabItem
 --- !u!43 &1292257541
 Mesh:
   m_ObjectHideFlags: 0
@@ -31978,6 +32113,100 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1516579956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6130336239905198349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1516579957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6130336239905198349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1516579958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516579956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30320644, y: 0.020290324, z: 0.18069635}
+  m_Center: {x: 0.00000023841858, y: 0.0017240986, z: -0.09033974}
+--- !u!114 &1516579959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516579956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7d5da4b926a4044a7975d426fdae96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  HideUIAfterInteract: 1
+  InteractOnce: 1
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  coverTransform: {fileID: 1516579957}
+  closedRotationX: -170
+  openRotationX: 5
+  openDuration: 0.78
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: -1959565795
+      Data2: 1331804452
+      Data3: 1349071747
+      Data4: -1127567377
+    Path: event:/SFX_Mechanic/Loop3_OpenBook
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1520318950 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1819789976304924047, guid: 51ac32c3625a28443803854d202004eb,
@@ -33198,7 +33427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05cc6de807bec114aa59af9c67c59185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalFragmentsNeeded: 4
+  totalFragmentsNeeded: 3
   completedPhotoObject: {fileID: 525914484}
   brokenPhotoObject: {fileID: 442678217}
   onFragmentCollected:
@@ -37175,6 +37404,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   destroyAfterPickup: 1
+  pickupSound:
+    Guid:
+      Data1: 1129205723
+      Data2: 1094471205
+      Data3: 867902603
+      Data4: 2080155071
+    Path: event:/SFX_Mechanic/GrabItem
 --- !u!4 &1933066231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1711466804396086885, guid: 6817c712a6eb1314da8476a619e1e912,
@@ -39866,7 +40102,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onPickUpSound: {fileID: 0}
+  _onPickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogData: {fileID: 0}
   Complete: {fileID: 782972263}
 --- !u!64 &2474671886760418880
@@ -41009,15 +41251,20 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9998739
+      value: -0.0041886615
       objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.015881801
+      value: -0.99999124
       objectReference: {fileID: 0}
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
@@ -41032,12 +41279,20 @@ PrefabInstance:
     - target: {fileID: 8881787002949022538, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 1.82
+      value: -180.48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516579959}
+    - targetCorrespondingSourceObject: {fileID: 7733144244831763641, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516579958}
   m_SourcePrefab: {fileID: 100100000, guid: 97531166ad4a7e342bb21fa10f1487b3, type: 3}
 --- !u!4 &6249404802350576551 stripped
 Transform:

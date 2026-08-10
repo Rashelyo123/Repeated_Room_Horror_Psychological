@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
+using FMODUnity;
 
 public class BloodCreature : MonoBehaviour
 {
@@ -14,11 +15,16 @@ public class BloodCreature : MonoBehaviour
     [SerializeField] private PlayableDirector timeLineBloodReaction;
     [SerializeField] private DialogData dialogData;
 
+    [SerializeField] private EventReference SwitchOn;
+
     public void ShowBloodLine()
     {
         StartCoroutine(ScenarioCoroutine());
     }
-
+    public void PlaySwitchOnSound()
+    {
+        RuntimeManager.PlayOneShotAttached(SwitchOn, gameObject);
+    }
     private IEnumerator ScenarioCoroutine()
     {
         for (int i = 0; i < bloodLinePrefab.Length; i++)

@@ -6,6 +6,7 @@ public class Music_Box : Interactable
 {
     [Header("FMOD (opsional)")]
     [SerializeField] private FMODUnity.EventReference MusicBoxSound;
+    [SerializeField] private FMODUnity.EventReference PickupSound;
     [SerializeField] private bool isBroken = true;
     [SerializeField] private bool isInspect = false;
     [SerializeField] private GameObject Engkol;
@@ -22,6 +23,7 @@ public class Music_Box : Interactable
             DialogManager.TriggerDialog(dialogData_isBroken);
             Engkol.SetActive(true);
             isInspect = true;
+            CanInteract = false;
         }
         else if (CanInteract && isInspect)
         {
@@ -32,6 +34,10 @@ public class Music_Box : Interactable
 
     }
 
+    public void GrabMusicBox()
+    {
+        FMODUnity.RuntimeManager.PlayOneShotAttached(PickupSound, gameObject);
+    }
     private void PlayMusicBoxSound()
     {
         if (!isBroken)

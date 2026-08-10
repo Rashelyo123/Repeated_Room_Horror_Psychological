@@ -4197,6 +4197,13 @@ MonoBehaviour:
   isPlayerMissionComplete: 0
   SCENE_NAME: Loop7
   doorLocked: {fileID: 0}
+  doorLockedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &308472876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10136,6 +10143,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 796007678}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 859838556}
+        m_TargetAssemblyTypeName: Interactable, Assembly-CSharp
+        m_MethodName: ResetInteraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 859838556}
+        m_TargetAssemblyTypeName: Music_Box, Assembly-CSharp
+        m_MethodName: GrabMusicBox
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &796007680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11263,6 +11306,13 @@ MonoBehaviour:
       Data3: -1348036458
       Data4: 1463815354
     Path: event:/System_Adaptive/Loop6_MusicBox
+  PickupSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   isBroken: 1
   isInspect: 0
   Engkol: {fileID: 796007678}
@@ -26761,6 +26811,13 @@ MonoBehaviour:
       Data3: 117076397
       Data4: 763912670
     Path: event:/System_Adaptive/Loop6HE_MuffedChild
+  TrowlerSwing:
+    Guid:
+      Data1: 939427318
+      Data2: 1337925341
+      Data3: 912514195
+      Data4: -1218140143
+    Path: event:/System_Adaptive/Loop6_StrollerRush
 --- !u!1 &1108826298
 GameObject:
   m_ObjectHideFlags: 0
@@ -29498,6 +29555,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1878645559}
         m_TargetAssemblyTypeName: TimelinePlayer, Assembly-CSharp
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1100696448}
+        m_TargetAssemblyTypeName: Child_Trowler, Assembly-CSharp
+        m_MethodName: PlayTrowlerSwing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38875,7 +38944,7 @@ PrefabInstance:
     - target: {fileID: 4884332919914143419, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39745,6 +39814,13 @@ MonoBehaviour:
   playerController: {fileID: 1899837552}
   timeLineBloodReaction: {fileID: 1878645557}
   dialogData: {fileID: 11400000, guid: 247fa332327d74f4fb00d9e8a1d4e51d, type: 2}
+  SwitchOn:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2018525489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6011632216581342783, guid: 60632eb3a51eb854083bd64612af5bf8,
@@ -42061,7 +42137,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onPickUpSound: {fileID: 0}
+  _onPickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogData: {fileID: 0}
   Complete: {fileID: 782972263}
 --- !u!64 &2474671886760418880

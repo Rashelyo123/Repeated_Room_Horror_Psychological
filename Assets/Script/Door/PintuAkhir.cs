@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PintuAkhir : Interactable
 {
@@ -10,6 +12,9 @@ public class PintuAkhir : Interactable
     public bool isPlayerMissionComplete = false;
     public string SCENE_NAME;
     public AudioClip doorLocked;
+
+    [SerializeField] private EventReference doorLockedSound;
+
 
 
     // public GameObject FadeOut;
@@ -30,6 +35,7 @@ public class PintuAkhir : Interactable
             {
                 // AudioSource.PlayClipAtPoint(doorLocked, transform.position);
                 Debug.Log("Mission belum selesai");
+                RuntimeManager.PlayOneShotAttached(doorLockedSound, gameObject);
             }
         }
 

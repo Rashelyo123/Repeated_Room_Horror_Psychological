@@ -4335,6 +4335,31 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1899837552}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Path
+      value: event:/SFX_Mechanic/UnlockDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data1
+      value: 115804599
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data2
+      value: 1198102241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data3
+      value: 1815280049
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data4
+      value: -456857478
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4861,6 +4886,13 @@ MonoBehaviour:
   isPlayerMissionComplete: 0
   SCENE_NAME: Loop5
   doorLocked: {fileID: 0}
+  doorLockedSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &308472876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7221,6 +7253,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 139825054945096623, guid: 97531166ad4a7e342bb21fa10f1487b3,
     type: 3}
   m_PrefabInstance: {fileID: 513888408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &515059562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4505730519813372174, guid: 8434a7a8e2dbeb24a938668c360751ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 5332905257793063744}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &537013591
 PrefabInstance:
@@ -32131,6 +32169,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2010674729}
+        m_TargetAssemblyTypeName: BloodCreature, Assembly-CSharp
+        m_MethodName: PlaySwitchOnSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &1358440937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40819,6 +40869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
+      propertyPath: flashlightSound.Path
+      value: event:/SFX_Mechanic/Loop4_Flashlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
       propertyPath: footstepIntervalWalk
       value: 0.5
       objectReference: {fileID: 0}
@@ -40841,6 +40896,26 @@ PrefabInstance:
         type: 3}
       propertyPath: footstepEvent.Guid.Data4
       value: -399713739
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: flashlightSound.Guid.Data1
+      value: 740094833
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: flashlightSound.Guid.Data2
+      value: 1326547183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: flashlightSound.Guid.Data3
+      value: -1166481772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: flashlightSound.Guid.Data4
+      value: -1314469549
       objectReference: {fileID: 0}
     - target: {fileID: 3091501331854198615, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
@@ -43162,6 +43237,13 @@ MonoBehaviour:
   playerController: {fileID: 1899837552}
   timeLineBloodReaction: {fileID: 1878645557}
   dialogData: {fileID: 11400000, guid: 247fa332327d74f4fb00d9e8a1d4e51d, type: 2}
+  SwitchOn:
+    Guid:
+      Data1: -672348788
+      Data2: 1299701964
+      Data3: -2030018160
+      Data4: -1440668887
+    Path: event:/SFX_Mechanic/Loop4_MainSwitch
 --- !u!1 &2018525489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6011632216581342783, guid: 60632eb3a51eb854083bd64612af5bf8,
@@ -44799,6 +44881,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1899837552}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: SoundFlashlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!65 &543450652896659708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45259,7 +45353,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onPickUpSound: {fileID: 0}
+  _onPickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogData: {fileID: 0}
   Complete: {fileID: 782972263}
 --- !u!64 &2474671886760418880
@@ -45955,7 +46055,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4505730519813372174, guid: 8434a7a8e2dbeb24a938668c360751ab,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8670679799181961661}
   m_SourcePrefab: {fileID: 100100000, guid: 8434a7a8e2dbeb24a938668c360751ab, type: 3}
 --- !u!4 &5392445112347701186 stripped
 Transform:
@@ -47339,6 +47443,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5332905257793063744}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8670679799181961661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515059562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1954092736
+      Data2: 1095676229
+      Data3: -2091960673
+      Data4: 651036851
+    Path: event:/System_Adaptive/Loop4S_Clock
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &8854665697371398607
 PrefabInstance:
   m_ObjectHideFlags: 0

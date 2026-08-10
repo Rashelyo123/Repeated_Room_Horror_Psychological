@@ -25,12 +25,12 @@ public class PlayerController : MonoBehaviour
 
     [Header("Flashlight Settings")]
     [SerializeField] private Light flashlight;
-    [SerializeField] private AudioClip flashlightSound;
+    [SerializeField] private EventReference flashlightSound;
 
     [Header("Animation Settings")]
     //[SerializeField] private Animator cameraShake;
     [SerializeField] private Animator playerWakeUpAnimator;
-    [SerializeField] private AudioClip wakeUpSound;
+    [SerializeField] private EventReference wakeUpSound;
 
     private CharacterController characterController;
     private AudioSource flashlightAudioSource;
@@ -129,11 +129,14 @@ public class PlayerController : MonoBehaviour
             if (flashlight != null) flashlight.enabled = isFlashlightOn;
 
             // Aman dari NullReferenceException jika AudioClip belum dimasukkan
-            if (flashlightSound != null && flashlightAudioSource != null)
-            {
-                flashlightAudioSource.PlayOneShot(flashlightSound);
-            }
+
+            RuntimeManager.PlayOneShotAttached(flashlightSound, gameObject);
+
         }
+    }
+    public void SoundFlashlight()
+    {
+        RuntimeManager.PlayOneShotAttached(flashlightSound, gameObject);
     }
 
     private void HandleCameraRotation()

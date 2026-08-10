@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7515884864122352136}
   - component: {fileID: 3093944427576756608}
   - component: {fileID: 433302824246147941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Kapak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
