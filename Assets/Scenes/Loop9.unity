@@ -347,18 +347,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2135,18 +2135,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -3665,11 +3665,11 @@ MonoBehaviour:
   doorLocked: {fileID: 0}
   doorLockedSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
 --- !u!1 &322117434 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6738423615636941503, guid: ce206a05836760c45bb939f857962821,
@@ -4662,18 +4662,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -13150,18 +13150,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -21116,18 +21116,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -24068,18 +24068,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -24290,6 +24290,13 @@ MonoBehaviour:
   playerController: {fileID: 1899837552}
   timeLineBloodReaction: {fileID: 1878645557}
   dialogData: {fileID: 11400000, guid: 247fa332327d74f4fb00d9e8a1d4e51d, type: 2}
+  SwitchOn:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &2018525489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6011632216581342783, guid: 60632eb3a51eb854083bd64612af5bf8,
@@ -26183,7 +26190,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onPickUpSound: {fileID: 0}
+  _onPickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogData: {fileID: 0}
   Complete: {fileID: 782972263}
 --- !u!64 &2474671886760418880
@@ -26954,11 +26967,11 @@ MonoBehaviour:
   Complete: {fileID: 782972263}
   tapeRecorderSound:
     Guid:
-      Data1: 178926363
-      Data2: 1257899771
-      Data3: 1855390356
-      Data4: 143402574
-    Path: event:/System_Adaptive/Loop2S_Radio
+      Data1: 640850034
+      Data2: 1336263686
+      Data3: -1178458951
+      Data4: 1427294263
+    Path: event:/SFX_Mechanic/Loop9_RADIODUMMY
   put:
     Guid:
       Data1: 1564070191
@@ -26969,6 +26982,13 @@ MonoBehaviour:
   dialogData: {fileID: 11400000, guid: 2bd0716e357b0d647abe811247ff88c4, type: 2}
   dialogData2: {fileID: 11400000, guid: 7815b40c4cb98504fa8da04dfbeb8f15, type: 2}
   tapeRecorderObjek2: {fileID: 662270875}
+  tapeRecorderSoundPickup:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!65 &5392445112347701190
 BoxCollider:
   m_ObjectHideFlags: 0
