@@ -30,7 +30,11 @@ public abstract class Interactable : MonoBehaviour
         if (InteractOnce)
             CanInteract = false; // kunci permanen setelah interact pertama
     }
-
+    public void ResetInteraction()
+    {
+        hasInteracted = false;
+        CanInteract = true;
+    }
     protected virtual void Interact()
     {
         OnInteract?.Invoke();

@@ -1,10 +1,11 @@
-
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 public class Key : Interactable
 {
 
-    [SerializeField] private AudioClip _onPickUpSound;
+    [SerializeField] private EventReference _onPickUpSound;
     [SerializeField] private DialogData dialogData;
     [SerializeField] private GameObject Complete;
 
@@ -15,7 +16,7 @@ public class Key : Interactable
         {
             // TriggerDialog();
             Complete.SetActive(true);
-
+            RuntimeManager.PlayOneShotAttached(_onPickUpSound, gameObject);
         }
     }
     public void TriggerDialog()

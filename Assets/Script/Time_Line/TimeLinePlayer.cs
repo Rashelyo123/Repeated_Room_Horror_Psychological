@@ -54,6 +54,7 @@ public class TimelinePlayer : MonoBehaviour
     {
         if (lockPlayerDuringTimeline && playerController != null)
             playerController.enabled = true;
+        Debug.Log("Timeline selesai, player dikembalikan kontrolnya.");
 
         onTimelineFinished?.Invoke();
     }

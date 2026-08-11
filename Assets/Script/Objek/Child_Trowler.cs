@@ -6,6 +6,7 @@ public class Child_Trowler : MonoBehaviour
 {
     [Header("FMOD (opsional)")]
     [SerializeField] private EventReference ChildCry;
+    [SerializeField] private EventReference TrowlerSwing;
 
     private EventInstance childCryInstance;
 
@@ -29,5 +30,10 @@ public class Child_Trowler : MonoBehaviour
     {
         // Jaga-jaga kalau object di-destroy sementara suara masih main
         StopChildCry();
+    }
+
+    public void PlayTrowlerSwing()
+    {
+        RuntimeManager.PlayOneShotAttached(TrowlerSwing, gameObject);
     }
 }
