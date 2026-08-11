@@ -40329,11 +40329,11 @@ MonoBehaviour:
   pictureFamilyBroken: {fileID: 442678217}
   BrokenPictureSound:
     Guid:
-      Data1: 1318359073
-      Data2: 1225662692
-      Data3: -891235674
-      Data4: -511856964
-    Path: event:/SFX_Mechanic/OpenDrawer
+      Data1: -641553886
+      Data2: 1250330884
+      Data3: -638102614
+      Data4: -201042384
+    Path: event:/SFX_Mechanic/Loop3_GlassShatter
 --- !u!1001 &3917982107697192100
 PrefabInstance:
   m_ObjectHideFlags: 0
