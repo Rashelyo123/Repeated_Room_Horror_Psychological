@@ -19,7 +19,7 @@ public class Picture_Family : MonoBehaviour
     private IEnumerator ScenarioPictureFamily()
     {
         yield return new WaitForSeconds(2f);
-        FMODUnity.RuntimeManager.PlayOneShot(BrokenPictureSound);
+        FMODUnity.RuntimeManager.PlayOneShot(BrokenPictureSound, transform.position);
         if (pictureFamily != null && pictureFamilyBroken != null)
         {
             pictureFamily.SetActive(false);

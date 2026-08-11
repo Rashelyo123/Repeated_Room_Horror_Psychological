@@ -106,7 +106,7 @@ public class ItemInspectionController : MonoBehaviour
     {
         if (isInspecting && currentItem != null)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 EndInspect();
                 return;

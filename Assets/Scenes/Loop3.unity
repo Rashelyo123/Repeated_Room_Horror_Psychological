@@ -6404,7 +6404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &482505931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6449,11 +6449,11 @@ MonoBehaviour:
   destroyAfterPickup: 1
   pickupSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1129205723
+      Data2: 1094471205
+      Data3: 867902603
+      Data4: 2080155071
+    Path: event:/SFX_Mechanic/GrabItem
 --- !u!64 &482505933
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28151,6 +28151,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979586732}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1240623353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240623355}
+  - component: {fileID: 1240623356}
+  m_Layer: 0
+  m_Name: Fmood_Emitter_Wife
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240623355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240623353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.441, y: 2.1201065, z: -9.988159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240623356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240623353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnStart: 0
+  playPlaylistOnStart: 1
+  fmodEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playlist:
+  - label: cekcok
+    audioEvent:
+      Guid:
+        Data1: -2137410196
+        Data2: 1290861038
+        Data3: 987858816
+        Data4: -1806169198
+      Path: event:/System_Adaptive/Loop3HE_Muffed
+    repeatCount: 0
+  - label: child cry
+    audioEvent:
+      Guid:
+        Data1: 1552347717
+        Data2: 1144387753
+        Data3: 23389069
+        Data4: -1801511618
+      Path: event:/System_Adaptive/Loop3HE_5_LoopCrying
+    repeatCount: 99
+  loopEntirePlaylist: 0
+  attachToGameObject: 1
 --- !u!1 &1245142882
 GameObject:
   m_ObjectHideFlags: 0
@@ -42571,3 +42645,4 @@ SceneRoots:
   - {fileID: 672250608}
   - {fileID: 1020851854}
   - {fileID: 1648658686}
+  - {fileID: 1240623355}
