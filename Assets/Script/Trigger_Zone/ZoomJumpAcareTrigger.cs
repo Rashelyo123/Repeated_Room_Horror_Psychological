@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using FMODUnity;
 
 public class ZoomJumpscareTrigger : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class ZoomJumpscareTrigger : MonoBehaviour
 
     [Header("Complete")]
     [SerializeField] private GameObject completeObject;
+
+    [SerializeField] private EventReference DoorSlam;
 
     private bool playerInZone = false;
     private bool hasTriggered = false;
@@ -85,6 +88,7 @@ public class ZoomJumpscareTrigger : MonoBehaviour
         jumpscareTimeline.stopped += OnJumpscareFinished;
         jumpscareTimeline.Play();
         completeObject.SetActive(true);
+        RuntimeManager.PlayOneShotAttached(DoorSlam,gameObject);
     }
 
     private void OnJumpscareFinished(PlayableDirector director)

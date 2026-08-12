@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanInteract: 1
-  PromptMessage: Interatc
+  PromptMessage: interact
   HideUIAfterInteract: 0
   InteractOnce: 0
   OnInteract:

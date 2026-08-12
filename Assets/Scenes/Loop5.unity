@@ -3853,7 +3853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanInteract: 1
-  PromptMessage: Interatc
+  PromptMessage: Interact
   HideUIAfterInteract: 0
   InteractOnce: 0
   OnInteract:
@@ -8418,6 +8418,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948365645}
+    - targetCorrespondingSourceObject: {fileID: 1819789976304924047, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948365646}
     - targetCorrespondingSourceObject: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       insertIndex: -1
@@ -27960,6 +27964,13 @@ MonoBehaviour:
   playerZoom: {fileID: 1899837553}
   playerController: {fileID: 1899837552}
   completeObject: {fileID: 782972263}
+  DoorSlam:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!43 &1292257541
 Mesh:
   m_ObjectHideFlags: 0
@@ -36451,6 +36462,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1948365646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779578979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnStart: 0
+  playPlaylistOnStart: 0
+  fmodEvent:
+    Guid:
+      Data1: -1476033768
+      Data2: 1131774939
+      Data3: 1726645899
+      Data4: 795184022
+    Path: event:/SFX_Mechanic/DoorSlam
+  playlist: []
+  loopEntirePlaylist: 0
+  attachToGameObject: 1
 --- !u!1001 &1949310455
 PrefabInstance:
   m_ObjectHideFlags: 0
