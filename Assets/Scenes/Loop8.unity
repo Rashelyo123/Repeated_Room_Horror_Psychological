@@ -512,18 +512,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -2651,18 +2651,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -4575,11 +4575,11 @@ MonoBehaviour:
   doorLocked: {fileID: 0}
   doorLockedSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
 --- !u!1 &313587919
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,18 +6264,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -32294,18 +32294,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -46445,18 +46445,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -50001,11 +50001,11 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
-      Data1: 115804599
-      Data2: 1198102241
-      Data3: 1815280049
-      Data4: -456857478
-    Path: event:/SFX_Mechanic/UnlockDoor
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
   unlockedOpenSound:
     Guid:
       Data1: 115804599
@@ -50626,6 +50626,13 @@ MonoBehaviour:
   playerController: {fileID: 1899837552}
   timeLineBloodReaction: {fileID: 1878645557}
   dialogData: {fileID: 11400000, guid: 247fa332327d74f4fb00d9e8a1d4e51d, type: 2}
+  SwitchOn:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &2017252343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53426,7 +53433,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _onPickUpSound: {fileID: 0}
+  _onPickUpSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogData: {fileID: 0}
   Complete: {fileID: 782972263}
 --- !u!64 &2474671886760418880

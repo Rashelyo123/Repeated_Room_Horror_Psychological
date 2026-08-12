@@ -780,18 +780,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -3078,18 +3078,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -4888,11 +4888,11 @@ MonoBehaviour:
   doorLocked: {fileID: 0}
   doorLockedSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
 --- !u!114 &308472876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4970,18 +4970,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -5980,18 +5980,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -28304,18 +28304,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -39547,18 +39547,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
+  unlockedOpenSound:
+    Guid:
       Data1: 115804599
       Data2: 1198102241
       Data3: 1815280049
       Data4: -456857478
     Path: event:/SFX_Mechanic/UnlockDoor
-  unlockedOpenSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -42363,18 +42363,18 @@ MonoBehaviour:
   openTowardsPlayer: 0
   lockedRattleSound:
     Guid:
-      Data1: 115804599
-      Data2: 1198102241
-      Data3: 1815280049
-      Data4: -456857478
-    Path: event:/SFX_Mechanic/UnlockDoor
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
   unlockedOpenSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2454220
+      Data2: 1195104381
+      Data3: 454159747
+      Data4: 333913816
+    Path: event:/SFX_Mechanic/PutDownItem
   onLockedInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -43228,11 +43228,11 @@ MonoBehaviour:
   - {fileID: 205379427}
   bloodSound:
     Guid:
-      Data1: 1774846176
-      Data2: 1248958472
-      Data3: -1548277595
-      Data4: 840522896
-    Path: event:/SFX_Mechanic/InteractRadio
+      Data1: -534745325
+      Data2: 1316907545
+      Data3: -432529017
+      Data4: 1661923075
+    Path: event:/System_Adaptive/Loop4_BloodSteps
   lockedDoorHandle: {fileID: 1121258166}
   playerController: {fileID: 1899837552}
   timeLineBloodReaction: {fileID: 1878645557}
