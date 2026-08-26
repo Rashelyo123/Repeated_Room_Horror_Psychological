@@ -13226,7 +13226,7 @@ PrefabInstance:
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.72
+      value: -14.562
       objectReference: {fileID: 0}
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
@@ -48009,6 +48009,7 @@ GameObject:
   - component: {fileID: 1878645558}
   - component: {fileID: 1878645557}
   - component: {fileID: 1878645559}
+  - component: {fileID: 1878645560}
   m_Layer: 0
   m_Name: Time_Line_wife
   m_TagString: Untagged
@@ -48091,7 +48092,43 @@ MonoBehaviour:
         m_CallState: 2
   onTimelineFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1878645560}
+        m_TargetAssemblyTypeName: AudioPlayModularFmod, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1878645560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878645556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnStart: 0
+  playPlaylistOnStart: 0
+  fmodEvent:
+    Guid:
+      Data1: 1775022669
+      Data2: 1109060294
+      Data3: 1261969822
+      Data4: -1000999283
+    Path: event:/System_Adaptive/Loop8HE_WhispersVoice
+  playlist: []
+  loopEntirePlaylist: 0
+  attachToGameObject: 1
 --- !u!1001 &1881827265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51568,7 +51605,7 @@ PrefabInstance:
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2218542
+      value: 2.999
       objectReference: {fileID: 0}
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
@@ -51578,7 +51615,7 @@ PrefabInstance:
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.72
+      value: -14.407
       objectReference: {fileID: 0}
     - target: {fileID: 2801352732443167978, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
