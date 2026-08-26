@@ -35414,6 +35414,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5725101189673387433, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: m_SlopeLimit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725101189673387433, guid: 2d907c5bb39585244ad8221a4b488062,
+        type: 3}
+      propertyPath: m_StepOffset
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7151412170402321294, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: promptText
