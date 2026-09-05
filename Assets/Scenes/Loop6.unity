@@ -5613,12 +5613,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 777791479}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &399073135 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 8111807174635959796, guid: 2d907c5bb39585244ad8221a4b488062,
-    type: 3}
-  m_PrefabInstance: {fileID: 1881827265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &405488494
 GameObject:
   m_ObjectHideFlags: 0
@@ -6367,6 +6361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790851568988538121, guid: ed53f494216ef4046aed0b9630566e79,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5981857571531123217, guid: ed53f494216ef4046aed0b9630566e79,
         type: 3}
@@ -8763,7 +8762,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -26295,7 +26294,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -29072,7 +29071,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -29340,6 +29339,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543995752236343805, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 4720795365229331253, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}
       propertyPath: m_Name
@@ -29420,6 +29424,16 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.00000166893
       objectReference: {fileID: 0}
+    - target: {fileID: 8421872365139031845, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
+    - target: {fileID: 9039531909774397835, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30783,7 +30797,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_Layer
@@ -34869,7 +34883,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -35002,7 +35016,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -38873,7 +38887,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetCamera
       value: 
-      objectReference: {fileID: 399073135}
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: lockYAxisOnly
@@ -39007,6 +39021,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543995752236343805, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 4720795365229331253, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}
       propertyPath: m_Name
@@ -39017,6 +39036,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8421872365139031845, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
+    - target: {fileID: 9039531909774397835, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43281,6 +43310,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2135116066624961352, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
+    - target: {fileID: 2677381630253112080, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 3007275330952825643, guid: 60632eb3a51eb854083bd64612af5bf8,
         type: 3}
       propertyPath: m_Size.x
@@ -43346,6 +43385,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6370633855331755627, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 6832968538982696817, guid: 60632eb3a51eb854083bd64612af5bf8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44266,6 +44310,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543995752236343805, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     - target: {fileID: 4720795365229331253, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}
       propertyPath: m_Name
@@ -44336,6 +44385,16 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.00000166893
       objectReference: {fileID: 0}
+    - target: {fileID: 8421872365139031845, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
+    - target: {fileID: 9039531909774397835, guid: f287716635fddd54fa34e7ea3eab30e5,
+        type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 1881827266}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
