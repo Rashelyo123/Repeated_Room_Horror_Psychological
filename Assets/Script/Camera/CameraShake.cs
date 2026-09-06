@@ -5,15 +5,12 @@ public class CameraShake : MonoBehaviour
 {
     public static CameraShake Instance;
 
-    [SerializeField] private Transform cameraTransform; // biasanya child kamera, atau kamera itu sendiri
-    private Vector3 originalLocalPos;
     private Coroutine shakeRoutine;
+    public Vector3 CurrentShakeOffset { get; private set; } = Vector3.zero;
 
     private void Awake()
     {
         Instance = this;
-        if (cameraTransform != null)
-            originalLocalPos = cameraTransform.localPosition;
     }
 
     public void Shake(float duration, float magnitude, float frequency = 25f)
@@ -29,15 +26,14 @@ public class CameraShake : MonoBehaviour
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-
-            float damper = 1f - Mathf.Clamp01(elapsed / duration); // makin lama makin kecil (decay)
+            float damper = 1f - Mathf.Clamp01(elapsed / duration);
             float offsetX = (Mathf.PerlinNoise(Time.time * frequency, 0f) - 0.5f) * 2f * magnitude * damper;
             float offsetY = (Mathf.PerlinNoise(0f, Time.time * frequency) - 0.5f) * 2f * magnitude * damper;
 
-            cameraTransform.localPosition = originalLocalPos + new Vector3(offsetX, offsetY, 0f);
+            CurrentShakeOffset = new Vector3(offsetX, offsetY, 0f);
             yield return null;
         }
 
-        cameraTransform.localPosition = originalLocalPos;
+        CurrentShakeOffset = Vector3.zero;
     }
 }

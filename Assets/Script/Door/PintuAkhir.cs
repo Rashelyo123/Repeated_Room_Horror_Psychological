@@ -49,6 +49,7 @@ public class PintuAkhir : Interactable
     public void OpenDoor()
     {
         //animator.SetTrigger("open");
+        isPlayerMissionComplete = true;
 
     }
 

@@ -16,6 +16,7 @@ public class HeadBobProfile
 public class HeadBobController : MonoBehaviour
 {
     [Header("Bob Profiles")]
+    [SerializeField] private CameraShake cameraShake;
     [SerializeField] private HeadBobProfile idleProfile = new HeadBobProfile { amplitude = 0.01f, frequency = 2f, fov = 60f };
     [SerializeField] private HeadBobProfile walkProfile = new HeadBobProfile { amplitude = 0.1f, frequency = 12f, fov = 60f };
     [SerializeField] private HeadBobProfile sprintProfile = new HeadBobProfile { amplitude = 0.2f, frequency = 18f, fov = 68f };
@@ -63,8 +64,11 @@ public class HeadBobController : MonoBehaviour
         timer += Time.deltaTime * currentFrequency;
         float yOffset = Mathf.Sin(timer) * currentAmplitude;
         float xOffset = Mathf.Cos(timer * 0.5f) * currentAmplitude * horizontalRatio;
-        transform.localPosition = startLocalPos + new Vector3(xOffset, yOffset, 0f) * weight;
-    }
 
+        Vector3 bobOffset = new Vector3(xOffset, yOffset, 0f) * weight;
+        Vector3 shakeOffset = CameraShake.Instance != null ? CameraShake.Instance.CurrentShakeOffset : Vector3.zero;
+
+        transform.localPosition = startLocalPos + bobOffset + shakeOffset;
+    }
     public void SetWeight(float newWeight) => weight = Mathf.Clamp01(newWeight);
 }

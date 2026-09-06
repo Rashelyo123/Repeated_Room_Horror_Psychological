@@ -4557,6 +4557,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 376236868}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &377817744 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 6641523529139647905, guid: a9b92285a54d1564791376adb8f7021d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2474671886760418875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &385809584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
@@ -24492,6 +24498,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 55495482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1099435335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099435338}
+  - component: {fileID: 1099435337}
+  - component: {fileID: 1099435336}
+  m_Layer: 0
+  m_Name: RoomToon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1099435336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099435335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648c290b8b6902d46894e6ef6bc88c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLoopIndex: 1
+--- !u!114 &1099435337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099435335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09c5f252ff4afff4c92b9d538e259bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomToneEvent:
+    Guid:
+      Data1: 843237236
+      Data2: 1283974178
+      Data3: 889143452
+      Data4: -1114574578
+    Path: event:/System_Adaptive/Room Tone
+--- !u!4 &1099435338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099435335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.641968, y: 2.817155, z: -20.96315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1108826298
 GameObject:
   m_ObjectHideFlags: 0
@@ -31046,6 +31117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa11f3ac3ada8f14aaefc8c14ea07ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraShake: {fileID: 0}
   idleProfile:
     amplitude: 0.01
     frequency: 2
@@ -32290,6 +32362,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.8899937, y: 2.9977846, z: 0.23222256}
   m_Center: {x: -7.579214, y: -0.04419875, z: 8.910463}
+--- !u!225 &1728371766 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7504708510620065375, guid: a9b92285a54d1564791376adb8f7021d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2474671886760418875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1729356045
 Mesh:
   m_ObjectHideFlags: 0
@@ -37384,6 +37462,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2474671886760418880}
+    - targetCorrespondingSourceObject: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2474671886760418882}
+    - targetCorrespondingSourceObject: {fileID: 2822262157674045865, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2474671886760418881}
   m_SourcePrefab: {fileID: 100100000, guid: a9b92285a54d1564791376adb8f7021d, type: 3}
 --- !u!4 &2474671886760418876 stripped
 Transform:
@@ -37404,11 +37490,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanInteract: 1
-  PromptMessage: E
-  PromptIcon: {fileID: 0}
+  PromptMessage: 
+  PromptIcon: {fileID: 21300000, guid: d8ba8c80991e3164ba3637d4432461af, type: 3}
   HideUIAfterInteract: 0
   InteractOnce: 0
-  worldIcon: {fileID: 0}
+  worldIcon: {fileID: 2474671886760418882}
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -37466,6 +37552,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0035200187, y: 0.25557986, z: 0.25766754}
   m_Center: {x: -0.00000012177043, y: 0.01491129, z: 0.025870323}
+--- !u!114 &2474671886760418881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136668495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255743889fd14a04d948cfc32ce49a56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 377817744}
+  showDistance: 0.6
+  fadeSpeed: 24
+  billboardToCamera: 1
+--- !u!114 &2474671886760418882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136668495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1728371766}
+  fadeSpeed: 8
+  billboardToCamera: 1
 --- !u!4 &2528611864740613392
 Transform:
   m_ObjectHideFlags: 0
@@ -39668,3 +39785,4 @@ SceneRoots:
   - {fileID: 1248479456}
   - {fileID: 988896794}
   - {fileID: 1140295854}
+  - {fileID: 1099435338}

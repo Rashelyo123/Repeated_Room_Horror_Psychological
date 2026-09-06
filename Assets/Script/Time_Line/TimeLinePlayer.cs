@@ -10,6 +10,9 @@ public class TimelinePlayer : MonoBehaviour
     [SerializeField] private MonoBehaviour playerController;
     [SerializeField] private bool lockPlayerDuringTimeline = false;
 
+    [Header("Head Bob")]
+    [SerializeField] private HeadBobController headBobController;
+
     [Header("Events")]
     public UnityEvent onTimelineStart;
     public UnityEvent onTimelineFinished;
@@ -26,7 +29,6 @@ public class TimelinePlayer : MonoBehaviour
             director.stopped -= HandleTimelineStopped;
     }
 
-    // Ini yang dipanggil dari UnityEvent
     public void Play()
     {
         if (director == null)
@@ -34,9 +36,21 @@ public class TimelinePlayer : MonoBehaviour
             Debug.LogWarning($"[TimelinePlayer] Director belum di-assign di {gameObject.name}");
             return;
         }
+        if (headBobController == null)
+        {
+            headBobController = FindObjectOfType<HeadBobController>();
+            if (headBobController == null)
+            {
+                Debug.LogWarning($"[TimelinePlayer] HeadBobController belum di-assign di {gameObject.name}");
+                // headBobController masih null di titik ini!
+            }
+        }
+
 
         if (lockPlayerDuringTimeline && playerController != null)
             playerController.enabled = false;
+
+        headBobController.enabled = false; // matiin head bob pas timeline jalan
 
         director.time = 0;
         director.Play();
@@ -54,6 +68,9 @@ public class TimelinePlayer : MonoBehaviour
     {
         if (lockPlayerDuringTimeline && playerController != null)
             playerController.enabled = true;
+
+        headBobController.enabled = true; // hidupin lagi pas timeline selesai
+
         Debug.Log("Timeline selesai, player dikembalikan kontrolnya.");
 
         onTimelineFinished?.Invoke();
