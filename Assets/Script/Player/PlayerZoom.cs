@@ -13,6 +13,7 @@ public class PlayerZoom : MonoBehaviour
 
     private bool isZooming = false;
     private float targetFOV;
+    private float fovVelocity;
 
     private void Start()
     {
@@ -39,7 +40,11 @@ public class PlayerZoom : MonoBehaviour
 
         }
 
-        playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, targetFOV, Time.deltaTime * zoomSpeed);
+        playerCamera.fieldOfView = Mathf.SmoothDamp(
+            playerCamera.fieldOfView,
+            targetFOV,
+            ref fovVelocity,
+            1f / Mathf.Max(zoomSpeed, 0.01f));
     }
 
     public bool IsZooming() => isZooming;

@@ -23,6 +23,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float smoothSpeed = 5.0f;
     [SerializeField] private float lookXLimit = 45.0f;
 
+
+
+    [Header("Head Bob")]
+    [SerializeField] private HeadBobController headBobController;
+
+
     [Header("Flashlight Settings")]
     [SerializeField] private Light flashlight;
     [SerializeField] private EventReference flashlightSound;
@@ -119,6 +125,9 @@ public class PlayerController : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
+
+        Vector3 horizontalVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
+        headBobController?.UpdateMovementState(horizontalVelocity.magnitude, isRunning);
     }
 
     private void HandleFlashlight()
