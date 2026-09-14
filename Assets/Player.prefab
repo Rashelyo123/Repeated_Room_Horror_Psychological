@@ -483,8 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 8111807174635959796}
   normalFOV: 60
-  zoomFOV: 30
-  zoomSpeed: 8
+  zoomFOV: 46.4
+  zoomSpeed: 4.43
   zoomKey: 324
 --- !u!1 &7169013901915320953
 GameObject:
@@ -653,18 +653,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa11f3ac3ada8f14aaefc8c14ea07ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 8111807174635959796}
+  playerZoom: {fileID: 7240944932520095557}
+  cameraShake: {fileID: 0}
   idleProfile:
     amplitude: 0.01
     frequency: 2
-    fov: 60
+    fov: 70.3
   walkProfile:
-    amplitude: 0.07
-    frequency: 7.13
-    fov: 60
+    amplitude: 0.03
+    frequency: 6.81
+    fov: 71.5
   sprintProfile:
-    amplitude: 0.1
-    frequency: 12.7
-    fov: 68
+    amplitude: 0.05
+    frequency: 9.7
+    fov: 84.9
   walkSpeedThreshold: 0.1
   transitionSpeed: 6
   horizontalRatio: 0.8

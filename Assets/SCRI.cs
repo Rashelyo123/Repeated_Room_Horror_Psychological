@@ -2,19 +2,17 @@ using UnityEngine;
 
 public class BillboardUI : MonoBehaviour
 {
-    public Camera mainCamera;
+    [SerializeField] private Camera mainCamera;
 
-    void Start()
+    private void Reset()
     {
-        // Menyimpan referensi kamera utama saat script mulai dijalankan
         mainCamera = Camera.main;
     }
 
-    void LateUpdate()
+    private void Update()
     {
-        if (mainCamera == null) return;
-
-        // Mengarahkan rotasi UI agar sama dengan arah rotasi kamera
-        transform.forward = mainCamera.transform.forward;
+        Quaternion rotation = mainCamera.transform.rotation;
+        transform.LookAt(worldPosition: transform.position + rotation * Vector3.forward,
+                          worldUp: rotation * Vector3.up);
     }
 }

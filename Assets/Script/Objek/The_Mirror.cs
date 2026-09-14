@@ -11,8 +11,11 @@ public class The_Mirror : MonoBehaviour
 
     [Header("Player Lock (opsional)")]
     [SerializeField] private PlayerController playerController;
+    [Header("Head Bob (opsional)")]
+    [SerializeField] private HeadBobController headBob;
 
     public GameObject Completel;
+
 
     private void OnEnable()
     {
@@ -40,6 +43,7 @@ public class The_Mirror : MonoBehaviour
 
         mirrorTimeline.time = 0;
         mirrorTimeline.Play();
+        headBob.enabled = false;
     }
 
     // Dipanggil dari Animation Event atau UnityEvent
@@ -47,6 +51,7 @@ public class The_Mirror : MonoBehaviour
     {
         if (mirrorTimeline == null) return;
         mirrorTimeline.Stop();
+
     }
 
     // Dipanggil dari Animation Event atau UnityEvent
@@ -65,6 +70,7 @@ public class The_Mirror : MonoBehaviour
     {
         if (playerController != null)
             playerController.enabled = true;
+        headBob.enabled = true;
         Completel.SetActive(true);
     }
 }

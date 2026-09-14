@@ -15,8 +15,12 @@ public class HeadBobProfile
 
 public class HeadBobController : MonoBehaviour
 {
-    [Header("Bob Profiles")]
+    [Header("References")]
+    [SerializeField] private Camera cam;
+    [SerializeField] private PlayerZoom playerZoom;
     [SerializeField] private CameraShake cameraShake;
+
+    [Header("Bob Profiles")]
     [SerializeField] private HeadBobProfile idleProfile = new HeadBobProfile { amplitude = 0.01f, frequency = 2f, fov = 60f };
     [SerializeField] private HeadBobProfile walkProfile = new HeadBobProfile { amplitude = 0.1f, frequency = 12f, fov = 60f };
     [SerializeField] private HeadBobProfile sprintProfile = new HeadBobProfile { amplitude = 0.2f, frequency = 18f, fov = 68f };
@@ -26,14 +30,21 @@ public class HeadBobController : MonoBehaviour
     [SerializeField] private float horizontalRatio = 0.8f;
     [SerializeField, Range(0f, 1f)] private float weight = 1f;
 
-    private float currentAmplitude, currentFrequency, timer;
+    private float currentAmplitude, currentFrequency, currentFov, timer;
     private Vector3 startLocalPos;
     private float externalSpeed;
     private bool externalIsRunning;
+    private float amplitudeVelocity, frequencyVelocity, fovVelocity;
+
 
     private void Awake()
     {
         startLocalPos = transform.localPosition;
+        if (cam == null) cam = GetComponent<Camera>();
+        if (playerZoom == null) playerZoom = GetComponentInParent<PlayerZoom>();
+        currentFov = cam != null ? cam.fieldOfView : idleProfile.fov;
+
+        //  Debug.Log($"[HeadBob] Cam assigned: {(cam != null ? cam.name : "NULL")}");
     }
 
     public void UpdateMovementState(float horizontalSpeed, bool isRunning)
@@ -46,10 +57,12 @@ public class HeadBobController : MonoBehaviour
     {
         HeadBobProfile target = GetTargetProfile();
 
-        currentAmplitude = Mathf.Lerp(currentAmplitude, target.amplitude, Time.deltaTime * transitionSpeed);
-        currentFrequency = Mathf.Lerp(currentFrequency, target.frequency, Time.deltaTime * transitionSpeed);
+        currentAmplitude = Mathf.SmoothDamp(currentAmplitude, target.amplitude, ref amplitudeVelocity, 0.25f);
+        currentFrequency = Mathf.SmoothDamp(currentFrequency, target.frequency, ref frequencyVelocity, 0.25f);
+        currentFov = Mathf.SmoothDamp(currentFov, target.fov, ref fovVelocity, 0.25f);
 
         ApplyBob();
+        ApplyFov();
     }
 
     private HeadBobProfile GetTargetProfile()
@@ -70,5 +83,19 @@ public class HeadBobController : MonoBehaviour
 
         transform.localPosition = startLocalPos + bobOffset + shakeOffset;
     }
+
+    private void ApplyFov()
+    {
+        if (cam == null) return;
+
+        if (playerZoom != null && playerZoom.IsZooming())
+            return;
+
+        cam.fieldOfView = Mathf.Lerp(
+            cam.fieldOfView,
+            currentFov,
+            Time.deltaTime * transitionSpeed);
+    }
+
     public void SetWeight(float newWeight) => weight = Mathf.Clamp01(newWeight);
 }

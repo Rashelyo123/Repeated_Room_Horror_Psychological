@@ -108,6 +108,7 @@ public class ItemInspectionController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                currentItem.setUI();
                 EndInspect();
                 return;
             }

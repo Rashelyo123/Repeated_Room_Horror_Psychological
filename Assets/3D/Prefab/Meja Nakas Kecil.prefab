@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2203108894890419602}
   - component: {fileID: 234959520960981587}
   - component: {fileID: 8787327242581999560}
+  - component: {fileID: 5297966883377878627}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -88,6 +89,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5297966883377878627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793383468995898269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &1136334217937829646
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,13 +227,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136334217937829646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &1197772529000584801
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +245,7 @@ GameObject:
   - component: {fileID: 2028788071743477755}
   - component: {fileID: 3057709582637939845}
   - component: {fileID: 1934023769104542449}
+  - component: {fileID: 160295865762348658}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -308,6 +322,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &160295865762348658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197772529000584801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &1407819292559289726
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +347,7 @@ GameObject:
   - component: {fileID: 3325600341956015235}
   - component: {fileID: 5106601652889041025}
   - component: {fileID: 2332708036668115389}
+  - component: {fileID: 4804902504971616742}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -396,6 +424,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &4804902504971616742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407819292559289726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &1656965890608005212
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +449,7 @@ GameObject:
   - component: {fileID: 2463982152292271436}
   - component: {fileID: 4189071535648844992}
   - component: {fileID: 6450408890895624236}
+  - component: {fileID: 2329332246248176545}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -484,6 +526,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2329332246248176545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656965890608005212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &4807687669258453331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1063,7 @@ GameObject:
   - component: {fileID: 6533830903721063767}
   - component: {fileID: 4850050659090441680}
   - component: {fileID: 686904037872560702}
+  - component: {fileID: 5848617482785875060}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -1084,6 +1140,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5848617482785875060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037684661355651549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &6498783737883554747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,13 +1278,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6498783737883554747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &7036079391681245417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,13 +1409,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7036079391681245417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &7939903794704161889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1628,7 @@ GameObject:
   - component: {fileID: 206455266177993699}
   - component: {fileID: 7372811212239948292}
   - component: {fileID: 9002664832765029594}
+  - component: {fileID: 115270671882712723}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -1637,6 +1705,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &115270671882712723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8471812822069209907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1001 &670177587678623936
 PrefabInstance:
   m_ObjectHideFlags: 0
