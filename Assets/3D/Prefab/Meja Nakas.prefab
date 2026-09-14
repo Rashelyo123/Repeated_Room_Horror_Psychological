@@ -125,13 +125,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722333453716217230}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &2353314958625858645
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,13 +256,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2353314958625858645}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &2637506827830138110
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +274,7 @@ GameObject:
   - component: {fileID: 242584698566503822}
   - component: {fileID: 7108667824127907148}
   - component: {fileID: 7962168919619412526}
+  - component: {fileID: 3226880829251627477}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -352,6 +351,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3226880829251627477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637506827830138110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &2864011674622705150
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +376,7 @@ GameObject:
   - component: {fileID: 4407370437197783193}
   - component: {fileID: 335059978383587478}
   - component: {fileID: 199995675840381032}
+  - component: {fileID: 8557138073452134600}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -440,6 +453,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &8557138073452134600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2864011674622705150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &3860203504433569705
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,6 +478,7 @@ GameObject:
   - component: {fileID: 6646526319749361152}
   - component: {fileID: 1076635304922828017}
   - component: {fileID: 3727483670305625919}
+  - component: {fileID: 5332768190688311587}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -528,6 +555,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5332768190688311587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3860203504433569705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &4303865351217350766
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +580,7 @@ GameObject:
   - component: {fileID: 8373749764526096539}
   - component: {fileID: 5840950873148667489}
   - component: {fileID: 48714596284996412}
+  - component: {fileID: 2749182897891269463}
   m_Layer: 5
   m_Name: interactUI
   m_TagString: Untagged
@@ -616,6 +657,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2749182897891269463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303865351217350766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &4720795365229331253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,13 +1429,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5814318913752573806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCamera: {fileID: 0}
-  lockYAxisOnly: 1
+  mainCamera: {fileID: 0}
 --- !u!1 &6484812529373751618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1447,7 @@ GameObject:
   - component: {fileID: 7016816099229471047}
   - component: {fileID: 1468468102090613285}
   - component: {fileID: 141541967101175931}
+  - component: {fileID: 7677255176856174095}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -1470,6 +1524,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7677255176856174095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6484812529373751618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &7356774014368226272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1549,7 @@ GameObject:
   - component: {fileID: 8300507917012678501}
   - component: {fileID: 6388057106949921098}
   - component: {fileID: 1261000425444349153}
+  - component: {fileID: 7441549455362932647}
   m_Layer: 5
   m_Name: BorderInteract
   m_TagString: Untagged
@@ -1558,6 +1626,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7441549455362932647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7356774014368226272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd093db7fef49754f867b3c239e5e5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
 --- !u!1 &7363135455101544349
 GameObject:
   m_ObjectHideFlags: 0

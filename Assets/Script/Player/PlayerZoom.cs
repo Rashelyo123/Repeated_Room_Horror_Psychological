@@ -36,15 +36,16 @@ public class PlayerZoom : MonoBehaviour
         if (Input.GetKeyUp(zoomKey))
         {
             isZooming = false;
-            targetFOV = normalFOV;
-
         }
 
-        playerCamera.fieldOfView = Mathf.SmoothDamp(
-            playerCamera.fieldOfView,
-            targetFOV,
-            ref fovVelocity,
-            1f / Mathf.Max(zoomSpeed, 0.01f));
+        if (isZooming)
+        {
+            playerCamera.fieldOfView = Mathf.SmoothDamp(
+                playerCamera.fieldOfView,
+                targetFOV,
+                ref fovVelocity,
+                1f / Mathf.Max(zoomSpeed, 0.01f));
+        }
     }
 
     public bool IsZooming() => isZooming;

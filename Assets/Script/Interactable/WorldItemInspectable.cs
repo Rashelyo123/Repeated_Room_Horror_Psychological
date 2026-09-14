@@ -9,12 +9,17 @@ public class WorldItemInspectable : Interactable
     [SerializeField] private Vector3 inspectRotation = Vector3.zero;
     [SerializeField] private AnimationCurve moveCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
     [SerializeField] private float rotationSpeed = 200f;
+    [SerializeField] private GameObject inspectUI;
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
 
     private Collider[] colliders;
     private Rigidbody rb;
+    public void setUI()
+    {
+        if (inspectUI != null) inspectUI.SetActive(true);
+    }
 
     private bool isInspecting = false;
     private Camera playerCamera;
