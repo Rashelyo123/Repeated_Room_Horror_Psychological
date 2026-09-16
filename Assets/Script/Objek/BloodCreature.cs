@@ -16,6 +16,7 @@ public class BloodCreature : MonoBehaviour
     [SerializeField] private DialogData dialogData;
 
     [SerializeField] private EventReference SwitchOn;
+    [SerializeField] private HeadBobController headBobController;
 
     public void ShowBloodLine()
     {
@@ -45,6 +46,7 @@ public class BloodCreature : MonoBehaviour
     private IEnumerator BloodReactionRoutine()
     {
         playerController.enabled = false;
+        headBobController.enabled = false;
 
         yield return new WaitForSeconds(0.5f);
 
@@ -58,5 +60,6 @@ public class BloodCreature : MonoBehaviour
     {
         timeLineBloodReaction.stopped -= OnTimelineFinished; // unsubscribe, penting!
         playerController.enabled = true;
+        headBobController.enabled = true;
     }
 }

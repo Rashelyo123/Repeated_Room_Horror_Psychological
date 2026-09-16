@@ -936,18 +936,18 @@ MonoBehaviour:
     m_RotationOrder: 4
   openSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
   closeSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
 --- !u!114 &6391510979775286913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,18 +1139,18 @@ MonoBehaviour:
     m_RotationOrder: 4
   openSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
   closeSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
 --- !u!114 &5574368719577747307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1800,18 +1800,18 @@ MonoBehaviour:
     m_RotationOrder: 4
   openSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1318359073
+      Data2: 1225662692
+      Data3: -891235674
+      Data4: -511856964
+    Path: event:/SFX_Mechanic/OpenDrawer
   closeSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1302931134
+      Data2: 1117431779
+      Data3: -633313633
+      Data4: -132467886
+    Path: event:/SFX_Mechanic/CloseDrawer
 --- !u!114 &5792547219929041542
 MonoBehaviour:
   m_ObjectHideFlags: 0
