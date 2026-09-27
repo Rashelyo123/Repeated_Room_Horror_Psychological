@@ -14455,11 +14455,11 @@ MonoBehaviour:
   hitShakeMagnitude: 0.08
   doorSlamp:
     Guid:
-      Data1: 133206791
-      Data2: 1257973550
-      Data3: 1398223234
-      Data4: -435981787
-    Path: event:/SFX_Mechanic/Loop7_WoodHit
+      Data1: -1476033768
+      Data2: 1131774939
+      Data3: 1726645899
+      Data4: 795184022
+    Path: event:/SFX_Mechanic/DoorSlam
 --- !u!1 &1215842913
 GameObject:
   m_ObjectHideFlags: 0
@@ -25329,6 +25329,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  headBobController: {fileID: 0}
 --- !u!1 &2018525489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6011632216581342783, guid: 60632eb3a51eb854083bd64612af5bf8,
