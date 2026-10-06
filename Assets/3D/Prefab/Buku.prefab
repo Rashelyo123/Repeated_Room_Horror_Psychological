@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139825054945096623}
-  - component: {fileID: -6741042308457027908}
   - component: {fileID: 6891400468196046717}
   - component: {fileID: 3103514535260664163}
   - component: {fileID: 1404407743882320555}
+  - component: {fileID: 5422034714422058251}
+  - component: {fileID: 7278564650303095822}
   m_Layer: 0
   m_Name: Buku
   m_TagString: Untagged
@@ -30,35 +31,15 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.178, y: 2.296, z: -8.69}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 771103707819046542}
   - {fileID: 8881787002949022538}
   - {fileID: 3867598336385863854}
+  - {fileID: 4528361135207028592}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &-6741042308457027908
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308280364991684180}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.31053555, y: 0.047813416, z: 0.22627513}
-  m_Center: {x: -0.0008462916, y: 0.023872536, z: 0.07978694}
 --- !u!114 &6891400468196046717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +73,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  coverTransform: {fileID: 8881787002949022538}
+  coverTransform: {fileID: 6075715810215751772}
   closedRotationX: -170
   openRotationX: 5
   openDuration: 0.78
@@ -165,6 +146,90 @@ MonoBehaviour:
   canvasGroup: {fileID: 2619674650007180227}
   fadeSpeed: 8
   billboardToCamera: 1
+--- !u!114 &5422034714422058251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308280364991684180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7d5da4b926a4044a7975d426fdae96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: E
+  PromptIcon: {fileID: 0}
+  HideUIAfterInteract: 1
+  InteractOnce: 1
+  worldIcon: {fileID: 0}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  coverTransform: {fileID: 8881787002949022538}
+  closedRotationX: -170
+  openRotationX: 5
+  openDuration: 0.78
+  easeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  openSound:
+    Guid:
+      Data1: -1959565795
+      Data2: 1331804452
+      Data3: 1349071747
+      Data4: -1127567377
+    Path: event:/SFX_Mechanic/Loop3_OpenBook
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!65 &7278564650303095822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308280364991684180}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31053555, y: 0.047813416, z: 0.22627513}
+  m_Center: {x: -0.0008462916, y: 0.023872536, z: 0.07978694}
 --- !u!1 &1468085297624120975
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &771103707819046542
 Transform:
   m_ObjectHideFlags: 0
@@ -600,7 +665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8881787002949022538
 Transform:
   m_ObjectHideFlags: 0
@@ -666,3 +731,103 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &4223096165279116171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 139825054945096623}
+    m_Modifications:
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622539180144034251, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_Name
+      value: Buku
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983251291388566487, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.06453241
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983251291388566487, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.9979156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983251291388566487, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983251291388566487, guid: 5069811c64e366d40a53ec7faa3d5645,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 172.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5069811c64e366d40a53ec7faa3d5645, type: 3}
+--- !u!4 &4528361135207028592 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 309776283895971067, guid: 5069811c64e366d40a53ec7faa3d5645,
+    type: 3}
+  m_PrefabInstance: {fileID: 4223096165279116171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6075715810215751772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7983251291388566487, guid: 5069811c64e366d40a53ec7faa3d5645,
+    type: 3}
+  m_PrefabInstance: {fileID: 4223096165279116171}
+  m_PrefabAsset: {fileID: 0}

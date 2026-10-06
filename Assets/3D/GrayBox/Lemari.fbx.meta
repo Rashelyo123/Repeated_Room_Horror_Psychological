@@ -3,7 +3,27 @@ guid: 50a0be646dbef154ca30c0465e64e12a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lemari
+    second: {fileID: 2100000, guid: 8f9985b7251756641a903916c5ada0fc, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scene_-_Root_diffuse
+    second: {fileID: 2800000, guid: dba82e037c885924f9848b675751ce32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scene_-_Root_normal
+    second: {fileID: 2800000, guid: 2750434819229b446b1e27df7c8fe358, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scene_-_Root_specularGlossiness
+    second: {fileID: 2800000, guid: 1576d48312ae12149984c6231a394b9c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
