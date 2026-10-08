@@ -14542,22 +14542,22 @@ PrefabInstance:
     - target: {fileID: 1304714660658163682, guid: 22b278c14ca1b0645b0e66073022e0a7,
         type: 3}
       propertyPath: hitSound.Guid.Data1
-      value: 133206791
+      value: 100189367
       objectReference: {fileID: 0}
     - target: {fileID: 1304714660658163682, guid: 22b278c14ca1b0645b0e66073022e0a7,
         type: 3}
       propertyPath: hitSound.Guid.Data2
-      value: 1257973550
+      value: 1214004068
       objectReference: {fileID: 0}
     - target: {fileID: 1304714660658163682, guid: 22b278c14ca1b0645b0e66073022e0a7,
         type: 3}
       propertyPath: hitSound.Guid.Data3
-      value: 1398223234
+      value: 567688596
       objectReference: {fileID: 0}
     - target: {fileID: 1304714660658163682, guid: 22b278c14ca1b0645b0e66073022e0a7,
         type: 3}
       propertyPath: hitSound.Guid.Data4
-      value: -435981787
+      value: -986901594
       objectReference: {fileID: 0}
     - target: {fileID: 5479290795063764015, guid: 22b278c14ca1b0645b0e66073022e0a7,
         type: 3}
@@ -42315,22 +42315,22 @@ PrefabInstance:
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data1
-      value: -2031924682
+      value: 803162426
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data2
-      value: 1287389443
+      value: 1103129971
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data3
-      value: 680979597
+      value: 802536866
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data4
-      value: -399713739
+      value: 957322555
       objectReference: {fileID: 0}
     - target: {fileID: 3091501331854198615, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
@@ -44390,6 +44390,7 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  headBobController: {fileID: 0}
 --- !u!1 &2018525489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6011632216581342783, guid: 60632eb3a51eb854083bd64612af5bf8,

@@ -1019,10 +1019,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 68392866}
-    - targetCorrespondingSourceObject: {fileID: 27386809126240931, guid: 7d2949995c1514e48a85349077500296,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 383730138}
   m_SourcePrefab: {fileID: 100100000, guid: 7d2949995c1514e48a85349077500296, type: 3}
 --- !u!4 &68392863 stripped
 Transform:
@@ -4391,27 +4387,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1587043348}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &383730136 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 27386809126240931, guid: 7d2949995c1514e48a85349077500296,
-    type: 3}
-  m_PrefabInstance: {fileID: 68392862}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &383730138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383730136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anisotropy: 0.25
-  scattering: 1
-  radius: 0.2
 --- !u!1 &385809584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
@@ -20092,22 +20067,22 @@ PrefabInstance:
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data1
-      value: -2031924682
+      value: 803162426
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data2
-      value: 1287389443
+      value: 1103129971
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data3
-      value: 680979597
+      value: 802536866
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}
       propertyPath: footstepEvent.Guid.Data4
-      value: -399713739
+      value: 957322555
       objectReference: {fileID: 0}
     - target: {fileID: 1839665406929910478, guid: 2d907c5bb39585244ad8221a4b488062,
         type: 3}

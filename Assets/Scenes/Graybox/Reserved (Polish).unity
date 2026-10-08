@@ -32915,10 +32915,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomToneEvent:
     Guid:
-      Data1: 843237236
-      Data2: 1283974178
-      Data3: 889143452
-      Data4: -1114574578
+      Data1: -2106467971
+      Data2: 1225054465
+      Data3: 861427841
+      Data4: 562006278
     Path: event:/System_Adaptive/Room Tone
 --- !u!4 &1099435338
 Transform:

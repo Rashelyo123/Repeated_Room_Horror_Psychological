@@ -295,10 +295,10 @@ MonoBehaviour:
   gravity: 50
   footstepEvent:
     Guid:
-      Data1: -2031924682
-      Data2: 1287389443
-      Data3: 680979597
-      Data4: -399713739
+      Data1: 803162426
+      Data2: 1103129971
+      Data3: 802536866
+      Data4: 957322555
     Path: event:/SFX_Mechanic/Footsteps
   footstepIntervalWalk: 0.5
   footstepIntervalRun: 0.3

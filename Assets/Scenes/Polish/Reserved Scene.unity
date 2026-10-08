@@ -10341,33 +10341,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.23222375, y: 2.9977846, z: 1.7503891}
   m_Center: {x: -2.3795943, y: -0.04419899, z: 0.032428592}
---- !u!1 &845682326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5926899602008312836, guid: f07808003d1dbec4faabb676b3879742,
-    type: 3}
-  m_PrefabInstance: {fileID: 22085390874371271}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &845682330
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845682326}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.015642406, y: 0.060178127, z: 0.049318314}
-  m_Center: {x: 0.00038301502, y: 0.06081538, z: -0.000000004656613}
 --- !u!4 &851641353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3569195326738578196, guid: cc9bbfb737012b049a638cd31fc6cbd8,
@@ -26013,10 +25986,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomToneEvent:
     Guid:
-      Data1: 843237236
-      Data2: 1283974178
-      Data3: 889143452
-      Data4: -1114574578
+      Data1: -2106467971
+      Data2: 1225054465
+      Data3: 861427841
+      Data4: 562006278
     Path: event:/System_Adaptive/Room Tone
 --- !u!4 &1099435338
 Transform:
@@ -39578,10 +39551,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3049446862982550950}
-    - targetCorrespondingSourceObject: {fileID: 5926899602008312836, guid: f07808003d1dbec4faabb676b3879742,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 845682330}
   m_SourcePrefab: {fileID: 100100000, guid: f07808003d1dbec4faabb676b3879742, type: 3}
 --- !u!4 &52646689985743066 stripped
 Transform:
@@ -49068,10 +49037,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7001689837047905667, guid: 591a5b25b305c2044ac6bed75cb90587,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1671560214}
     - targetCorrespondingSourceObject: {fileID: 2991716163572157518, guid: 591a5b25b305c2044ac6bed75cb90587,
         type: 3}
       insertIndex: -1
@@ -49080,6 +49045,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 834733413}
+    - targetCorrespondingSourceObject: {fileID: 7001689837047905667, guid: 591a5b25b305c2044ac6bed75cb90587,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1671560214}
   m_SourcePrefab: {fileID: 100100000, guid: 591a5b25b305c2044ac6bed75cb90587, type: 3}
 --- !u!1001 &5332905257793063744
 PrefabInstance:

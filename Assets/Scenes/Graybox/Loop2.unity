@@ -18300,7 +18300,7 @@ MonoBehaviour:
       Data2: 1257899771
       Data3: 1855390356
       Data4: 143402574
-    Path: event:/System_Adaptive/Loop2_Radio
+    Path: event:/System_Adaptive/Loop2S_Radio
   radioClickSound:
     Guid:
       Data1: 1774846176
