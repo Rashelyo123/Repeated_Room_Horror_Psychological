@@ -2159,6 +2159,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1864595959}
+    - targetCorrespondingSourceObject: {fileID: 8960171872177527515, guid: 692f85113c17c074aa515bfaeca1e08e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2081445299}
   m_SourcePrefab: {fileID: 100100000, guid: 692f85113c17c074aa515bfaeca1e08e, type: 3}
 --- !u!1001 &250842676
 PrefabInstance:
@@ -17301,6 +17305,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081445296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8960171872177527515, guid: 692f85113c17c074aa515bfaeca1e08e,
+    type: 3}
+  m_PrefabInstance: {fileID: 247667582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2081445299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081445296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnStart: 1
+  playPlaylistOnStart: 0
+  fmodEvent:
+    Guid:
+      Data1: 2138978909
+      Data2: 1074371492
+      Data3: 1792137114
+      Data4: -1529120107
+    Path: event:/System_Adaptive/LampuGerak
+  playlist: []
+  loopEntirePlaylist: 0
+  attachToGameObject: 1
 --- !u!1 &2085287756
 GameObject:
   m_ObjectHideFlags: 0
