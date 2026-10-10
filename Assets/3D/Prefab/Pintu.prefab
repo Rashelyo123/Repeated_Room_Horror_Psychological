@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 8097768111971122812}
+  interactUI: {fileID: 0}
   fadeSpeed: 8.84
   billboardToCamera: 1
 --- !u!114 &214683088081517535
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 8097768111971122812}
+  interactUI: {fileID: 0}
   fadeSpeed: 8
   billboardToCamera: 1
 --- !u!114 &382266325199820409
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255743889fd14a04d948cfc32ce49a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 2962960378919837663}
+  borderInteract: {fileID: 0}
   showDistance: 2
   fadeSpeed: 23
   billboardToCamera: 1
@@ -928,7 +928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 8097768111971122812}
+  interactUI: {fileID: 8097768111971122812}
   fadeSpeed: 8.84
   billboardToCamera: 1
 --- !u!114 &8845160129344101328
@@ -943,7 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255743889fd14a04d948cfc32ce49a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 2962960378919837663}
+  borderInteract: {fileID: 2962960378919837663}
   showDistance: 2
   fadeSpeed: 23
   billboardToCamera: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
-  isLocked: 0
+  isLocked: 1
   shakeDuration: 0.4
   shakeAngle: 12
   shakeCount: 4
@@ -997,6 +997,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 2066999548935531507}
+  doorRotationAxis: 2
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:

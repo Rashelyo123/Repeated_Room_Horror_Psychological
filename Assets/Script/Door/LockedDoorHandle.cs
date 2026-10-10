@@ -13,8 +13,15 @@ public class LockedDoorHandle : Interactable
     [SerializeField] private int shakeCount = 4;           // berapa kali goyang bolak-balik
     [SerializeField] private AnimationCurve shakeCurve = AnimationCurve.EaseInOut(0, 1, 1, 0); // intensitas makin lama makin kecil
 
+    public enum RotationAxis
+{
+    X,
+    Y,
+    Z
+}
     [Header("Door Animation Settings")]
     [SerializeField] private Transform doorPivot;           // objek pintu yang beneran berputar (bukan gagang)
+    [SerializeField] private RotationAxis doorRotationAxis = RotationAxis.Y;
     [SerializeField] private float doorOpenAngle = 90f;     // sudut buka pintu (derajat)
     [SerializeField] private float doorOpenDuration = 1f;   // lama animasi buka
     [SerializeField] private AnimationCurve doorOpenCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
@@ -52,6 +59,17 @@ public class LockedDoorHandle : Interactable
             doorClosedRotation = doorPivot.localRotation;
         }
     }
+
+    private Vector3 GetAxisVector(RotationAxis axis)
+{
+    switch (axis)
+    {
+        case RotationAxis.X: return Vector3.right;
+        case RotationAxis.Y: return Vector3.up;
+        case RotationAxis.Z: return Vector3.forward;
+        default: return Vector3.up;
+    }
+}
 
     public void TryOpen()
     {
@@ -129,7 +147,7 @@ public class LockedDoorHandle : Interactable
         float targetAngle = open ? doorOpenAngle : 0f;
 
         // opsional: kalau openTowardsPlayer true, bisa dibalik arahnya berdasarkan posisi player
-        Quaternion targetRot = doorClosedRotation * Quaternion.Euler(0f, targetAngle, 0f);
+       Quaternion targetRot = doorClosedRotation * Quaternion.AngleAxis(targetAngle, GetAxisVector(doorRotationAxis));
 
         float t = 0f;
         while (t < doorOpenDuration)

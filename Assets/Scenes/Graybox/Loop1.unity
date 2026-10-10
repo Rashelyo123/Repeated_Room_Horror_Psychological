@@ -654,6 +654,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -2015,6 +2016,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -2159,10 +2161,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1864595959}
-    - targetCorrespondingSourceObject: {fileID: 8960171872177527515, guid: 692f85113c17c074aa515bfaeca1e08e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2081445299}
   m_SourcePrefab: {fileID: 100100000, guid: 692f85113c17c074aa515bfaeca1e08e, type: 3}
 --- !u!1001 &250842676
 PrefabInstance:
@@ -2987,6 +2985,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -3357,6 +3356,11 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 122443047}
+    - target: {fileID: 4090526620825679448, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 122443047}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3676,6 +3680,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -5832,12 +5837,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbc7eff6c6f7ed44bb2efbda852f51d, type: 3}
---- !u!4 &693257188 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1940847119502544334, guid: f287716635fddd54fa34e7ea3eab30e5,
-    type: 3}
-  m_PrefabInstance: {fileID: 8338351195762324194}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &693257189 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5792547219929041542, guid: f287716635fddd54fa34e7ea3eab30e5,
@@ -8060,6 +8059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6395970233423904654, guid: 51ac32c3625a28443803854d202004eb, type: 3}
+    - {fileID: 5910753600689882183, guid: 51ac32c3625a28443803854d202004eb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -8071,6 +8071,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 308472876}
+    - targetCorrespondingSourceObject: {fileID: 3535820711425542225, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1339266701}
   m_SourcePrefab: {fileID: 100100000, guid: 51ac32c3625a28443803854d202004eb, type: 3}
 --- !u!1001 &1057973200
 PrefabInstance:
@@ -8447,6 +8451,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -10007,6 +10012,12 @@ CanvasGroup:
     type: 3}
   m_PrefabInstance: {fileID: 8338351195762324194}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1266003853 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1989992410099587499, guid: f287716635fddd54fa34e7ea3eab30e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8338351195762324194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1276894517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10925,6 +10936,55 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 822553383}
   m_SourcePrefab: {fileID: 100100000, guid: 1e1d7d37053417d4aaea6d8e97f62c70, type: 3}
+--- !u!1 &1339266693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3535820711425542225, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1052841409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1339266697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7850144998581428296, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1052841409}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339266693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1339266701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339266693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072074f4b399abb479b0482e3b08e043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: Interact
+  PromptIcon: {fileID: 21300000, guid: d8ba8c80991e3164ba3637d4432461af, type: 3}
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  worldIcon: {fileID: 1339266697}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  isPlayerMissionComplete: 0
+  SCENE_NAME: Loop2
+  doorLocked: {fileID: 0}
+  doorLockedSound:
+    Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
 --- !u!1 &1344581168
 GameObject:
   m_ObjectHideFlags: 0
@@ -11326,6 +11386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 122443047}
@@ -11334,6 +11399,11 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1556294608}
+    - target: {fileID: 3457903415320229815, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_Layer
@@ -11349,6 +11419,11 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 122443047}
+    - target: {fileID: 5910753600689882183, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: isLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6395970233423904654, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_Enabled
@@ -11755,6 +11830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pecahan_foto_bapak2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000260110013744898, guid: f086cb01a50060c419d34cbd0fe1c3c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2650490671985481113, guid: f086cb01a50060c419d34cbd0fe1c3c9,
         type: 3}
@@ -15169,6 +15249,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -16669,6 +16750,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   doorPivot: {fileID: 0}
+  doorRotationAxis: 1
   doorOpenAngle: 90
   doorOpenDuration: 1
   doorOpenCurve:
@@ -17305,36 +17387,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2081445296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8960171872177527515, guid: 692f85113c17c074aa515bfaeca1e08e,
-    type: 3}
-  m_PrefabInstance: {fileID: 247667582}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2081445299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081445296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playOnStart: 1
-  playPlaylistOnStart: 0
-  fmodEvent:
-    Guid:
-      Data1: 2138978909
-      Data2: 1074371492
-      Data3: 1792137114
-      Data4: -1529120107
-    Path: event:/System_Adaptive/LampuGerak
-  playlist: []
-  loopEntirePlaylist: 0
-  attachToGameObject: 1
 --- !u!1 &2085287756
 GameObject:
   m_ObjectHideFlags: 0
@@ -18122,8 +18174,13 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 693257188}
+    m_TransformParent: {fileID: 1266003853}
     m_Modifications:
+    - target: {fileID: 1297458547402584712, guid: a9b92285a54d1564791376adb8f7021d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1297458547402584712, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18142,37 +18199,37 @@ PrefabInstance:
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0663
+      value: 0.1096
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0699
+      value: 0.0145
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0165
+      value: 0.0699
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: -0.50000006
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.49999997
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: 0.4999999
       objectReference: {fileID: 0}
     - target: {fileID: 2818209086738753829, guid: a9b92285a54d1564791376adb8f7021d,
         type: 3}
@@ -18267,7 +18324,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 308472871}
+      - m_Target: {fileID: 1339266701}
         m_TargetAssemblyTypeName: PintuAkhir, Assembly-CSharp
         m_MethodName: OpenDoor
         m_Mode: 1
@@ -18992,6 +19049,11 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 122443047}
+    - target: {fileID: 5422034714422058251, guid: 97531166ad4a7e342bb21fa10f1487b3,
+        type: 3}
+      propertyPath: coverTransform
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19638,9 +19700,9 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 4884332919914143419, guid: f287716635fddd54fa34e7ea3eab30e5, type: 3}
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1940847119502544334, guid: f287716635fddd54fa34e7ea3eab30e5,
+    - targetCorrespondingSourceObject: {fileID: 1989992410099587499, guid: f287716635fddd54fa34e7ea3eab30e5,
         type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 2474671886760418876}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f287716635fddd54fa34e7ea3eab30e5, type: 3}

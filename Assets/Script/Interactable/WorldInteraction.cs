@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WorldInteractIcon : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private CanvasGroup interactUI;
     [SerializeField] private float fadeSpeed = 8f;
     [SerializeField] private bool billboardToCamera = true;
 
@@ -12,8 +12,8 @@ public class WorldInteractIcon : MonoBehaviour
     private void Awake()
     {
         mainCamera = Camera.main;
-        if (canvasGroup != null)
-            canvasGroup.alpha = 0f;
+        if (interactUI != null)
+            interactUI.alpha = 0f;
     }
 
     public void SetTargeted(bool targeted)
@@ -23,10 +23,10 @@ public class WorldInteractIcon : MonoBehaviour
 
     private void Update()
     {
-        if (canvasGroup == null) return;
+        if (interactUI == null) return;
 
         float target = isTargeted ? 1f : 0f;
-        canvasGroup.alpha = Mathf.Lerp(canvasGroup.alpha, target, Time.deltaTime * fadeSpeed);
+        interactUI.alpha = Mathf.Lerp(interactUI.alpha, target, Time.deltaTime * fadeSpeed);
 
         if (billboardToCamera && mainCamera != null)
         {

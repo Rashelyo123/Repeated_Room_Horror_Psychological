@@ -3,7 +3,7 @@ using UnityEngine;
 public class ProximityIcon : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private CanvasGroup borderInteract;
 
     [Header("Settings")]
     [SerializeField] private float showDistance = 3f;
@@ -17,13 +17,13 @@ public class ProximityIcon : MonoBehaviour
     {
         mainCamera = Camera.main;
 
-        if (canvasGroup == null)
-            canvasGroup = GetComponent<CanvasGroup>();
+        if (borderInteract == null)
+            borderInteract = GetComponent<CanvasGroup>();
 
-        if (canvasGroup == null)
-            canvasGroup = gameObject.AddComponent<CanvasGroup>();
+        if (borderInteract == null)
+            borderInteract = gameObject.AddComponent<CanvasGroup>();
 
-        canvasGroup.alpha = 0f;
+        borderInteract.alpha = 0f;
         currentAlpha = 0f;
     }
 
@@ -47,7 +47,7 @@ public class ProximityIcon : MonoBehaviour
     // Dipanggil dari ProximityIconManager, BUKAN dari Update() sendiri
     public void UpdateVisibility(Vector3 playerPosition)
     {
-        if (canvasGroup == null) return;
+        if (borderInteract == null) return;
 
         if (mainCamera == null)
             mainCamera = Camera.main;
@@ -57,7 +57,7 @@ public class ProximityIcon : MonoBehaviour
 
         float target = shouldShow ? 1f : 0f;
         currentAlpha = Mathf.Lerp(currentAlpha, target, Time.deltaTime * fadeSpeed);
-        canvasGroup.alpha = currentAlpha;
+        borderInteract.alpha = currentAlpha;
 
         if (billboardToCamera && mainCamera != null && currentAlpha > 0.01f)
         {
