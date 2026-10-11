@@ -423,6 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548275623644120797}
   - component: {fileID: 4193225221017846208}
+  - component: {fileID: 6309774498177275181}
   m_Layer: 0
   m_Name: Lentera
   m_TagString: Untagged
@@ -505,6 +506,30 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00022962946, y: 0.031765178, z: 0.0001536198}
     m_Extent: {x: 0.0028621298, y: 0.03221596, z: 0.0028820285}
   m_DirtyAABB: 0
+--- !u!114 &6309774498177275181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8960171872177527515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbeee900ec5a348aa37a8eef33803d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playOnStart: 1
+  playPlaylistOnStart: 0
+  fmodEvent:
+    Guid:
+      Data1: 2138978909
+      Data2: 1074371492
+      Data3: 1792137114
+      Data4: -1529120107
+    Path: event:/System_Adaptive/LampuGerak
+  playlist: []
+  loopEntirePlaylist: 0
+  attachToGameObject: 1
 --- !u!1 &9173282286704666560
 GameObject:
   m_ObjectHideFlags: 0
