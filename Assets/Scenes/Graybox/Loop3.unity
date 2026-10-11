@@ -11846,23 +11846,23 @@ MonoBehaviour:
   - label: cekcok
     audioEvent:
       Guid:
-        Data1: -214995819
-        Data2: 1182349616
-        Data3: -55984729
-        Data4: 2117275661
-      Path: event:/System_Adaptive/Loop3HE_3_Im_wife
+        Data1: -1685154141
+        Data2: 1191125249
+        Data3: -101117302
+        Data4: 385495458
+      Path: event:/System_Adaptive/Loop3HE_MuffledArgue
     repeatCount: 0
-  - label: child cry
+  - label: wife  cry
     audioEvent:
       Guid:
-        Data1: 1225849644
-        Data2: 1146466738
-        Data3: -1309599078
-        Data4: 1714527406
-      Path: event:/System_Adaptive/Loop3HE_5_LoopCrying
+        Data1: -2050625985
+        Data2: 1181203034
+        Data3: 1940513166
+        Data4: -657862910
+      Path: event:/System_Adaptive/Loop3HE_5_WifeCrying
     repeatCount: 99
   loopEntirePlaylist: 0
-  attachToGameObject: 1
+  attachToGameObject: 0
 --- !u!1 &1246986798
 GameObject:
   m_ObjectHideFlags: 0

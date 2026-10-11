@@ -19,15 +19,6 @@ public class AudioPlayModularFmod : MonoBehaviour
     [SerializeField] private bool playOnStart = false;
     [SerializeField] private bool playPlaylistOnStart = false;
 
-    private void Start()
-    {
-        if (playOnStart)
-            Play();
-
-        if (playPlaylistOnStart)
-            PlayPlaylist();
-    }
-
     [Header("FMOD Event (single, opsional)")]
     [SerializeField] private EventReference fmodEvent;
 
@@ -40,6 +31,15 @@ public class AudioPlayModularFmod : MonoBehaviour
 
     private EventInstance eventInstance;
     private Coroutine playlistRoutine;
+
+    private void Start()
+    {
+        if (playOnStart)
+            Play();
+
+        if (playPlaylistOnStart)
+            PlayPlaylist();
+    }
 
     // ============ SINGLE EVENT ============
 
@@ -151,8 +151,12 @@ public class AudioPlayModularFmod : MonoBehaviour
     {
         StopInternal();
         eventInstance = RuntimeManager.CreateInstance(evt);
+
         if (attachToGameObject)
             RuntimeManager.AttachInstanceToGameObject(eventInstance, transform);
+        else
+            eventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+
         eventInstance.start();
     }
 
@@ -173,6 +177,8 @@ public class AudioPlayModularFmod : MonoBehaviour
 
     private void OnDestroy()
     {
-        StopPlaylist();
+        if (playlistRoutine != null)
+            StopCoroutine(playlistRoutine);
+        StopInternal(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
