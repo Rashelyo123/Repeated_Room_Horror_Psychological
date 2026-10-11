@@ -390,6 +390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pecahan_foto_bapak2
       objectReference: {fileID: 0}
+    - target: {fileID: 2000260110013744898, guid: f086cb01a50060c419d34cbd0fe1c3c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2650490671985481113, guid: f086cb01a50060c419d34cbd0fe1c3c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2525,7 +2530,7 @@ PrefabInstance:
     - target: {fileID: 8381930008321238655, guid: f07808003d1dbec4faabb676b3879742,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.26
+      value: -1.274
       objectReference: {fileID: 0}
     - target: {fileID: 8381930008321238655, guid: f07808003d1dbec4faabb676b3879742,
         type: 3}
@@ -5684,6 +5689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pecahan_foto_bapak
       objectReference: {fileID: 0}
+    - target: {fileID: 1205006855367061921, guid: f656a07886afcbd40bdc305b5d4308b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7800,6 +7810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pecahan_foto_anak
+      objectReference: {fileID: 0}
+    - target: {fileID: 314227038350830730, guid: 35d393f9f630d9e47b46cad59f74213c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1332246535205575145, guid: 35d393f9f630d9e47b46cad59f74213c,
         type: 3}
@@ -21158,7 +21173,7 @@ PrefabInstance:
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
@@ -23788,6 +23803,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -74.314
       objectReference: {fileID: 0}
+    - target: {fileID: 7992437895157086809, guid: 9c4015d79b1de09409bb6b8315c26d38,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8222042538348758113, guid: 9c4015d79b1de09409bb6b8315c26d38,
         type: 3}
       propertyPath: m_IsActive
@@ -23848,6 +23868,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cincin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123887025358797723, guid: f00f4e70140f30141941decaefdc74c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8396635294162154494, guid: f00f4e70140f30141941decaefdc74c1,
         type: 3}
@@ -25827,6 +25852,11 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 539502195}
+    - target: {fileID: 6581373650895668871, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6832968538982696817, guid: 60632eb3a51eb854083bd64612af5bf8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26232,8 +26262,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003487617889502414, guid: 5a7ca7f7d37230745ad80e87a3767913,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003487617889502414, guid: 5a7ca7f7d37230745ad80e87a3767913,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0833
+      value: 0.027
       objectReference: {fileID: 0}
     - target: {fileID: 8073293036689781575, guid: 5a7ca7f7d37230745ad80e87a3767913,
         type: 3}
@@ -26493,6 +26528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Foto Figura
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226452142313295968, guid: 33bd59ea06ff8f64f8266823a9815b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 1035566854315527695, guid: fa02852dcf72158469f63c3b9872f3fb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.796
+      value: 14.814
       objectReference: {fileID: 0}
     - target: {fileID: 1035566854315527695, guid: fa02852dcf72158469f63c3b9872f3fb,
         type: 3}
@@ -14183,6 +14183,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pecahan_foto_bapak
       objectReference: {fileID: 0}
+    - target: {fileID: 1205006855367061921, guid: f656a07886afcbd40bdc305b5d4308b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14632,6 +14637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pecahan_foto_ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436191960302509000, guid: 5fb64c63dcc84244aa36b6e4c9c4d196,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43741,6 +43751,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pecahan_foto_anak
       objectReference: {fileID: 0}
+    - target: {fileID: 314227038350830730, guid: 35d393f9f630d9e47b46cad59f74213c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1332246535205575145, guid: 35d393f9f630d9e47b46cad59f74213c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47648,7 +47663,7 @@ PrefabInstance:
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.019
       objectReference: {fileID: 0}
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
@@ -51159,7 +51174,7 @@ PrefabInstance:
     - target: {fileID: 4188460884409770678, guid: 9c4015d79b1de09409bb6b8315c26d38,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4524338307385774763, guid: 9c4015d79b1de09409bb6b8315c26d38,
         type: 3}
@@ -51250,6 +51265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cincin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123887025358797723, guid: f00f4e70140f30141941decaefdc74c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8396635294162154494, guid: f00f4e70140f30141941decaefdc74c1,
         type: 3}
@@ -52293,7 +52313,7 @@ PrefabInstance:
     - target: {fileID: 7309347713380019198, guid: d7c27edcf7c1f094186bfbd831deb0a2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.160667
+      value: 1.114
       objectReference: {fileID: 0}
     - target: {fileID: 7309347713380019198, guid: d7c27edcf7c1f094186bfbd831deb0a2,
         type: 3}
@@ -53053,6 +53073,11 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 735118595}
+    - target: {fileID: 6581373650895668871, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6832968538982696817, guid: 60632eb3a51eb854083bd64612af5bf8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53274,7 +53299,7 @@ PrefabInstance:
     - target: {fileID: 139825054945096623, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.169
+      value: 1.094
       objectReference: {fileID: 0}
     - target: {fileID: 139825054945096623, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
@@ -53785,6 +53810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Foto Figura
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226452142313295968, guid: 33bd59ea06ff8f64f8266823a9815b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -4833,6 +4833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pecahan_foto_bapak
       objectReference: {fileID: 0}
+    - target: {fileID: 1205006855367061921, guid: f656a07886afcbd40bdc305b5d4308b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5910,6 +5915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pecahan_foto_anak
+      objectReference: {fileID: 0}
+    - target: {fileID: 314227038350830730, guid: 35d393f9f630d9e47b46cad59f74213c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1332246535205575145, guid: 35d393f9f630d9e47b46cad59f74213c,
         type: 3}
@@ -8118,12 +8128,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1883381672}
   m_SourcePrefab: {fileID: 100100000, guid: b85f76a499b066242b44cf083dfa794b, type: 3}
---- !u!225 &995539245 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 1937681204572460055, guid: b85f76a499b066242b44cf083dfa794b,
-    type: 3}
-  m_PrefabInstance: {fileID: 969752822}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &995693693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14043,7 +14047,7 @@ PrefabInstance:
     - target: {fileID: 8381930008321238655, guid: f07808003d1dbec4faabb676b3879742,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.26
+      value: -1.267
       objectReference: {fileID: 0}
     - target: {fileID: 8381930008321238655, guid: f07808003d1dbec4faabb676b3879742,
         type: 3}
@@ -14662,12 +14666,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!225 &1757654174 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 3380369458674958313, guid: b85f76a499b066242b44cf083dfa794b,
-    type: 3}
-  m_PrefabInstance: {fileID: 969752822}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1776767514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16174,7 +16172,7 @@ PrefabInstance:
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.014
       objectReference: {fileID: 0}
     - target: {fileID: 6747171319343636957, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
@@ -16594,6 +16592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pecahan_foto_ibu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436191960302509000, guid: 5fb64c63dcc84244aa36b6e4c9c4d196,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17861,6 +17864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cincin
       objectReference: {fileID: 0}
+    - target: {fileID: 7123887025358797723, guid: f00f4e70140f30141941decaefdc74c1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8396635294162154494, guid: f00f4e70140f30141941decaefdc74c1,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18454,7 +18462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 995539245}
+  interactUI: {fileID: 0}
   fadeSpeed: 8
   billboardToCamera: 1
 --- !u!114 &4072797430956923061
@@ -18469,7 +18477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255743889fd14a04d948cfc32ce49a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 1757654174}
+  borderInteract: {fileID: 0}
   showDistance: 1.44
   fadeSpeed: 24
   billboardToCamera: 1
@@ -18853,6 +18861,11 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 2039967618}
+    - target: {fileID: 6581373650895668871, guid: 60632eb3a51eb854083bd64612af5bf8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7149205421782760156, guid: 60632eb3a51eb854083bd64612af5bf8,
         type: 3}
       propertyPath: mainCamera
@@ -18879,7 +18892,7 @@ PrefabInstance:
     - target: {fileID: 139825054945096623, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.169
+      value: 1.093
       objectReference: {fileID: 0}
     - target: {fileID: 139825054945096623, guid: 97531166ad4a7e342bb21fa10f1487b3,
         type: 3}
@@ -19200,6 +19213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Foto Figura
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226452142313295968, guid: 33bd59ea06ff8f64f8266823a9815b61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
