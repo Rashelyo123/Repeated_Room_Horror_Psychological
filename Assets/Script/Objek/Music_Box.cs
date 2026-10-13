@@ -10,6 +10,7 @@ public class Music_Box : Interactable
     [SerializeField] private bool isBroken = true;
     [SerializeField] private bool isInspect = false;
     [SerializeField] private GameObject Engkol;
+    [SerializeField] private GameObject EngkolAnim;
 
     [SerializeField] private DialogData dialogData_isBroken;
     [SerializeField] private DialogData dialogData_isFixed;
@@ -28,6 +29,7 @@ public class Music_Box : Interactable
         else if (CanInteract && isInspect)
         {
             StartCoroutine(PlayMusicBoxSoundCoroutine());
+            EngkolAnim.SetActive(true);
 
         }
 
