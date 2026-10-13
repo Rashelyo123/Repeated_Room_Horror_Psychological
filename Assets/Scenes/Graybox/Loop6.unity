@@ -45553,6 +45553,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pintu (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6710739
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7413905
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 95.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: targetCamera
