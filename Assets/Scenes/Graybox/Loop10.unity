@@ -12471,7 +12471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a46599190b28fc4e92a96e802a94c0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 308472871}
+  quest: {fileID: 1280370669}
 --- !u!65 &782972266
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15550,6 +15550,57 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &930203430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7906570732806300937, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1900800745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &930203435
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930203430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &930203436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930203430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b483d4df57cb92d4c855443e2d852d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 117823429}
+  swingShakeDuration: 0.15
+  swingShakeMagnitude: 0.03
+  hitShakeDuration: 0.2
+  hitShakeMagnitude: 0.08
+  doorSlamp:
+    Guid:
+      Data1: -1476033768
+      Data2: 1131774939
+      Data3: 1726645899
+      Data4: 795184022
+    Path: event:/SFX_Mechanic/DoorSlam
 --- !u!1001 &932469181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17617,6 +17668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6395970233423904654, guid: 51ac32c3625a28443803854d202004eb, type: 3}
+    - {fileID: 5910753600689882183, guid: 51ac32c3625a28443803854d202004eb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -17628,6 +17680,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 308472876}
+    - targetCorrespondingSourceObject: {fileID: 3535820711425542225, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1280370669}
     - targetCorrespondingSourceObject: {fileID: 3712736265787120896, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       insertIndex: -1
@@ -21191,6 +21247,55 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7952605283693686630, guid: a127f560a50aea84ca6c3fb347b8cc46, type: 3}
+--- !u!1 &1280370661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3535820711425542225, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1052841409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1280370665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7850144998581428296, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1052841409}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280370661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c247c4ba4c026654bac6233beb7caff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1280370669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280370661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072074f4b399abb479b0482e3b08e043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  PromptMessage: Interact
+  PromptIcon: {fileID: 0}
+  HideUIAfterInteract: 0
+  InteractOnce: 0
+  worldIcon: {fileID: 1280370665}
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  isPlayerMissionComplete: 0
+  SCENE_NAME: MainMenu
+  doorLocked: {fileID: 0}
+  doorLockedSound:
+    Guid:
+      Data1: -684298837
+      Data2: 1139802846
+      Data3: 1331476652
+      Data4: 1093020918
+    Path: event:/SFX_Mechanic/LockedDoor
 --- !u!1001 &1289127351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31898,7 +32003,7 @@ PlayableDirector:
   - key: {fileID: -671833290064576722, guid: 35b369faac089c242824242f4b3b10d5, type: 2}
     value: {fileID: 1899837550}
   - key: {fileID: -7051136884563235292, guid: 35b369faac089c242824242f4b3b10d5, type: 2}
-    value: {fileID: 1214931749}
+    value: {fileID: 930203435}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1878645558
@@ -32881,7 +32986,7 @@ PrefabInstance:
     - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9659258
+      value: 0.72236407
       objectReference: {fileID: 0}
     - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
@@ -32896,12 +33001,12 @@ PrefabInstance:
     - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.2588191
+      value: 0.691513
       objectReference: {fileID: 0}
     - target: {fileID: 2066999548935531507, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 30
+      value: 281.5
       objectReference: {fileID: 0}
     - target: {fileID: 3235969081729229593, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
@@ -32923,6 +33028,16 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1773618}
+    - target: {fileID: 5910753600689882183, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910753600689882183, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      propertyPath: doorOpenAngle
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 6658620434794557071, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       propertyPath: m_Enabled
@@ -33035,6 +33150,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1912479803}
+    - targetCorrespondingSourceObject: {fileID: 7906570732806300937, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930203435}
+    - targetCorrespondingSourceObject: {fileID: 7906570732806300937, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930203436}
     - targetCorrespondingSourceObject: {fileID: 3712736265787120896, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       insertIndex: -1
