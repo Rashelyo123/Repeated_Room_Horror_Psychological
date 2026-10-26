@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            InitAudio();
+            StartRoomTone();
         }
         else
         {
@@ -24,15 +24,28 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void InitAudio()
+    public void StartRoomTone()
     {
+        if (roomToneInstance.isValid()) return; // sudah jalan, jangan dobel
+
         roomToneInstance = RuntimeManager.CreateInstance(roomToneEvent);
         roomToneInstance.start();
     }
 
+    public void StopRoomTone(bool immediate = true)
+    {
+        if (!roomToneInstance.isValid()) return;
+
+        roomToneInstance.stop(immediate
+            ? FMOD.Studio.STOP_MODE.IMMEDIATE
+            : FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        roomToneInstance.release();
+        roomToneInstance.clearHandle();
+    }
+
     void OnDestroy()
     {
-        roomToneInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        roomToneInstance.release();
+        if (Instance != this) return;
+        StopRoomTone(false);
     }
 }

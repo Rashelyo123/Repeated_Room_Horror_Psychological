@@ -8325,57 +8325,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1363876045}
   m_SourcePrefab: {fileID: 100100000, guid: d982735de1e46bb49b5db675e696a3a3, type: 3}
---- !u!1 &1099435335
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1099435338}
-  - component: {fileID: 1099435337}
-  m_Layer: 0
-  m_Name: RoomToon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1099435337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099435335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c5f252ff4afff4c92b9d538e259bd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomToneEvent:
-    Guid:
-      Data1: -2106467971
-      Data2: 1225054465
-      Data3: 861427841
-      Data4: 562006278
-    Path: event:/System_Adaptive/Room Tone
---- !u!4 &1099435338
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099435335}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.641968, y: 2.817155, z: -20.96315}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121258161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3491739992988526666, guid: 51ac32c3625a28443803854d202004eb,
@@ -19171,6 +19120,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33bd59ea06ff8f64f8266823a9815b61, type: 3}
+--- !u!1001 &7734593240241501165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5806911886415688595, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_Name
+      value: RoomTone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.641968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.817155
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.96315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d83299ecacba7445bc875f04dfdbe15, type: 3}
 --- !u!1001 &8308135239995080128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19701,5 +19718,5 @@ SceneRoots:
   - {fileID: 1248479456}
   - {fileID: 988896794}
   - {fileID: 1140295854}
-  - {fileID: 1099435338}
+  - {fileID: 7734593240241501165}
   - {fileID: 6940207778314752755}
