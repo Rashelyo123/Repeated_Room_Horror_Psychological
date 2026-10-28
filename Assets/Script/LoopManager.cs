@@ -13,6 +13,14 @@ public class LoopManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        SetLoopCycle(currentLoopIndex);
+
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.StartRoomTone();
+    }
+
     public void SetLoopCycle(int loopNumber)
     {
         currentLoopIndex = loopNumber;

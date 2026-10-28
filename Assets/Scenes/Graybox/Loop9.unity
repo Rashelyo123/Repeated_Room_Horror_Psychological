@@ -4542,6 +4542,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7562756026230353984, guid: e843f74b8f927b54798e154c9ac72807,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1984510222}
     - targetCorrespondingSourceObject: {fileID: 6568081412734013370, guid: e843f74b8f927b54798e154c9ac72807,
         type: 3}
       insertIndex: -1
@@ -10964,6 +10968,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  tapeMaxWait: 15
+  chaseAmbience:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  onChaseStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onChaseStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &231282905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47317,6 +47335,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1099270763}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1100892224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5806911886415688595, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_Name
+      value: RoomTone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.641968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.817155
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.96315
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8834838313696400902, guid: 1d83299ecacba7445bc875f04dfdbe15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d83299ecacba7445bc875f04dfdbe15, type: 3}
 --- !u!1001 &1103676012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56194,7 +56280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f6ed9ef7b13f94686b39d0ac18d1fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 60
+  totalTime: 3000
   criticalWindow: 10
   autoStart: 1
   minIntensity: 0.6
@@ -64423,6 +64509,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  tapeMaxWait: 15
+  chaseAmbience:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  onChaseStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onChaseStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1474766580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78841,6 +78941,20 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  tapeMaxWait: 15
+  chaseAmbience:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  onChaseStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onChaseStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1837823909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85052,6 +85166,25 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1881827265}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1984510220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7562756026230353984, guid: e843f74b8f927b54798e154c9ac72807,
+    type: 3}
+  m_PrefabInstance: {fileID: 117022399}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1984510222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984510220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072247360e8c1894f8de657ba97d9c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tapeRecorder: {fileID: 5392445112347701187}
 --- !u!1001 &1985190031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93647,6 +93780,20 @@ MonoBehaviour:
       Data3: 867902603
       Data4: 2080155071
     Path: event:/SFX_Mechanic/GrabItem
+  tapeMaxWait: 15
+  chaseAmbience:
+    Guid:
+      Data1: -975098598
+      Data2: 1159450208
+      Data3: 526785689
+      Data4: 2131085563
+    Path: event:/System_Adaptive/Loop9_ChaseAmbience
+  onChaseStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onChaseStop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &5392445112347701190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -95968,3 +96115,4 @@ SceneRoots:
   - {fileID: 1363659112}
   - {fileID: 2474671886760418875}
   - {fileID: 117022399}
+  - {fileID: 1100892224}
