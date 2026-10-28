@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+  m_AmbientSkyColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_AmbientEquatorColor: {r: 0.8792453, g: 0, b: 0, a: 1}
   m_AmbientGroundColor: {r: 0.9622642, g: 0.6415095, b: 0, a: 1}
   m_AmbientIntensity: 1
@@ -3714,6 +3714,7 @@ Transform:
   - {fileID: 1711518408}
   - {fileID: 1689161659}
   - {fileID: 1154807279}
+  - {fileID: 5600795970970994612}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354849700
@@ -6283,7 +6284,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.59
   m_Range: 9.03
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
@@ -8134,7 +8135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anisotropy: 0.25
-  scattering: 1
+  scattering: 2
   radius: 0.2
 --- !u!114 &834690847
 MonoBehaviour:
@@ -12239,7 +12240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anisotropy: 0.25
-  scattering: 1
+  scattering: 2
   radius: 0.2
 --- !u!114 &1254786975
 MonoBehaviour:
@@ -13711,7 +13712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anisotropy: 0.25
-  scattering: 1
+  scattering: 2
   radius: 0.2
 --- !u!114 &1410788470
 MonoBehaviour:
@@ -22068,6 +22069,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ae3e16d63e4b9346aa44e9918b324da, type: 3}
+--- !u!1001 &4969941807698512134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 353833092}
+    m_Modifications:
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47300005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.750041
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753475712647920722, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Fan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3, type: 3}
 --- !u!4 &5392445112347701186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7327355505235396598, guid: 177cf38d19a0e5149a0d327e91bf5bc4,
@@ -22255,6 +22324,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c4178904146444cb83dde7e0fc6118, type: 3}
+--- !u!4 &5600795970970994612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4969941807698512134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5834548382285412951
 PrefabInstance:
   m_ObjectHideFlags: 0
