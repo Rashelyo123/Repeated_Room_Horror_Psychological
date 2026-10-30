@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.03
+  m_FogDensity: 0.06
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
@@ -8933,6 +8933,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4607980818668140139, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8981,6 +8986,11 @@ PrefabInstance:
     - target: {fileID: 4941472444981913320, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497394326166054957, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
+        type: 3}
+      propertyPath: isOn
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5753475712647920722, guid: a6fe2e9ffe6ac3f438ec1c7e8ca756a3,
