@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.Events;
 
 /// Pasang di object hantu. Menukar kamera player ke kamera death,
 /// mematikan kontrol pemain, lalu memutar Timeline jumpscare.
@@ -14,6 +15,7 @@ public class DeathCamSwap : MonoBehaviour
     [Header("Timeline")]
     [Tooltip("Matikan 'Play On Awake' di PlayableDirector ini.")]
     [SerializeField] PlayableDirector director;
+    [SerializeField] UnityEvent onTimelineFinished;
 
     [Header("Pemain")]
     [Tooltip("Movement, mouse look, dll.")]
@@ -25,6 +27,16 @@ public class DeathCamSwap : MonoBehaviour
     [SerializeField] float snapDistance = 1.2f;
 
     bool triggered;
+
+    void OnEnable()
+    {
+        if (director) director.stopped += OnTimelineStopped;
+    }
+
+    void OnDisable()
+    {
+        if (director) director.stopped -= OnTimelineStopped;
+    }
 
     void Awake()
     {
@@ -47,6 +59,11 @@ public class DeathCamSwap : MonoBehaviour
 
         if (director) director.Play();
         if (dynamicLayer) dynamicLayer.Play(intensity, profileOverride);
+    }
+
+    void OnTimelineStopped(PlayableDirector stoppedDirector)
+    {
+        onTimelineFinished?.Invoke();
     }
 
     void SnapGhostInFrontOf(Transform player)
