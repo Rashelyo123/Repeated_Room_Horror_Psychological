@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3336957304dba4e8f33fa7c1602fec, type: 3}
+  m_Name: Loop8_1
+  m_EditorClassIdentifier: 
+  characterName: Arthur
+  lines:
+  - text: It's empty.
+    voiceEvent:
+      Guid:
+        Data1: 1166823012
+        Data2: 1341670172
+        Data3: -554408819
+        Data4: 639205060
+      Path: event:/VoiceOver/VO_Loop8_3
+    delay: 0

@@ -5205,13 +5205,14 @@ MonoBehaviour:
   onTriggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Children_Toy, Assembly-CSharp
-        m_MethodName: StartDialogChildrenToy
-        m_Mode: 1
+      - m_Target: {fileID: 556360174}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: TriggerDialog
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: db1a9ad122e59c84096259cd605ce5fe,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5225,6 +5226,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 254867705}
     m_Modifications:
+    - target: {fileID: 733888159361399255, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1541247808350866976, guid: 3f3d7cc475c1e8a4e9fcdcb2c6444bf9,
         type: 3}
       propertyPath: m_Name
@@ -5395,6 +5401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 556360175}
   - component: {fileID: 556360174}
+  - component: {fileID: 556360176}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -5433,6 +5440,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &556360176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556360173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accae68f4b97bae42a699dd5391f01d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogData: {fileID: 0}
 --- !u!1 &588197186
 GameObject:
   m_ObjectHideFlags: 0
@@ -18392,6 +18412,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIME_LINE
       objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: dialogData
+      value: 
+      objectReference: {fileID: 11400000, guid: 80ecd2d379eb4a0409aea375a776eb80,
+        type: 2}
     - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
         type: 3}
       propertyPath: playerController

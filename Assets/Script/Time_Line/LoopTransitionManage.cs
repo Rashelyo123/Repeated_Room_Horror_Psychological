@@ -34,7 +34,7 @@ public class LoopTransitionManager : MonoBehaviour
     }
     private void DialogTrigger()
     {
-        if (dialogData != null && (SceneManager.GetActiveScene().name == "Loop2" || SceneManager.GetActiveScene().name == "Loop3"))
+        if (dialogData != null && (SceneManager.GetActiveScene().name == "Loop2" || SceneManager.GetActiveScene().name == "Loop3" || SceneManager.GetActiveScene().name == "Loop9"))
         {
             DialogManager.TriggerDialog(dialogData);
         }

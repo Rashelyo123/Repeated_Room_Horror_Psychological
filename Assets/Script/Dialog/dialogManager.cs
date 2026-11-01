@@ -1,117 +1,146 @@
+using System;
+using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    [SerializeField] private GameObject dialogPanel; // Panel UI untuk dialog
-    [SerializeField] private TextMeshProUGUI dialogText; // Teks dialog
-    [SerializeField] private TextMeshProUGUI characterNameText; // Nama karakter (opsional)
-    [SerializeField] private float fadeDuration = 0.5f; // Durasi fade-in (detik)
+    public static DialogManager Instance { get; private set; }
 
-    private CanvasGroup canvasGroup; // Untuk mengontrol opacity
-    private string[] currentDialog;
-    private float[] currentDelays;
-    private int currentLine = 0;
-    private string currentCharacterName;
-    private bool isDialogActive;
+    [Header("UI")]
+    [SerializeField] private GameObject dialogPanel;
+    [SerializeField] private TextMeshProUGUI dialogText;
+    [SerializeField] private TextMeshProUGUI characterNameText; // opsional
+    [SerializeField] private float fadeDuration = 0.5f;
+
+    public event Action OnDialogEnded;
+    public bool IsDialogActive { get; private set; }
+
+    private CanvasGroup canvasGroup;
+    private Coroutine dialogRoutine;
+    private EventInstance voiceInstance;
+    private bool skipRequested;
 
     private void Awake()
     {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+
         canvasGroup = dialogPanel.GetComponent<CanvasGroup>();
-        if (canvasGroup == null)
-        {
-            canvasGroup = dialogPanel.AddComponent<CanvasGroup>();
-        }
-        canvasGroup.alpha = 0; // Mulai dengan opacity 0 (tak terlihat)
-        dialogPanel.SetActive(false); // Sembunyikan panel saat mulai
-        dialogText.text = "";
-        characterNameText.text = "";
-    }
+        if (canvasGroup == null) canvasGroup = dialogPanel.AddComponent<CanvasGroup>();
 
-    public void StartDialog(DialogData dialogData)
-    {
-        if (dialogData == null || dialogData.dialogLines.Length == 0) return;
-
-        currentDialog = dialogData.dialogLines;
-        currentDelays = dialogData.delays;
-        currentCharacterName = dialogData.characterName;
-        currentLine = 0;
-        dialogPanel.SetActive(true);
-        isDialogActive = true;
-        StartCoroutine(FadeInAndDisplay());
-    }
-
-    private System.Collections.IEnumerator FadeInAndDisplay()
-    {
-        // Fade-in panel
-        float elapsedTime = 0f;
         canvasGroup.alpha = 0;
-        while (elapsedTime < fadeDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
-            yield return null;
-        }
-
-        // Tampilkan dialog dengan jeda
-        while (currentLine < currentDialog.Length && isDialogActive)
-        {
-            dialogText.text = currentDialog[currentLine];
-            characterNameText.text = currentCharacterName;
-            float delay = (currentLine < currentDelays.Length) ? currentDelays[currentLine] : 2.0f;
-            yield return new WaitForSeconds(delay);
-            currentLine++;
-        }
-
-        // Fade-out setelah selesai
-        yield return StartCoroutine(FadeOut());
+        dialogPanel.SetActive(false);
+        dialogText.text = "";
+        if (characterNameText != null) characterNameText.text = "";
     }
 
-    private System.Collections.IEnumerator FadeOut()
+    private void OnDestroy()
     {
-        float elapsedTime = 0f;
-        while (elapsedTime < fadeDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            canvasGroup.alpha = 1 - Mathf.Clamp01(elapsedTime / fadeDuration);
-            yield return null;
-        }
-        EndDialog();
+        StopVoice();
+    }
+
+    public void StartDialog(DialogData data)
+    {
+        if (data == null || data.lines == null || data.lines.Length == 0) return;
+
+        if (dialogRoutine != null) StopCoroutine(dialogRoutine);
+        StopVoice();
+
+        dialogRoutine = StartCoroutine(PlayDialog(data));
     }
 
     public void NextDialog()
     {
-        if (isDialogActive && currentLine < currentDialog.Length)
+        if (IsDialogActive) skipRequested = true;
+    }
+
+    private IEnumerator PlayDialog(DialogData data)
+    {
+        IsDialogActive = true;
+        dialogPanel.SetActive(true);
+
+        if (characterNameText != null) characterNameText.text = data.characterName;
+        yield return Fade(0f, 1f);
+
+        foreach (DialogLine line in data.lines)
         {
-            StopAllCoroutines();
-            StartCoroutine(FadeInAndDisplay());
+            dialogText.text = line.text;
+            skipRequested = false;
+
+           bool hasVoice = !line.voiceEvent.IsNull;
+            if (hasVoice) PlayVoice(line.voiceEvent);
+
+            // 1) Tunggu VO selesai (atau di-skip)
+            while (hasVoice && IsVoicePlaying() && !skipRequested)
+                yield return null;
+
+            // 2) Jeda setelah VO / durasi baris kalau tanpa VO
+            float timer = 0f;
+            while (timer < line.delay && !skipRequested)
+            {
+                timer += Time.unscaledDeltaTime;
+                yield return null;
+            }
+
+            StopVoice();
         }
+
+        yield return Fade(1f, 0f);
+        EndDialog();
+    }
+
+    // ---------- FMOD ----------
+    private void PlayVoice(EventReference evt)
+    {
+        StopVoice();
+        voiceInstance = RuntimeManager.CreateInstance(evt);
+        voiceInstance.start();
+    }
+
+    private bool IsVoicePlaying()
+    {
+        if (!voiceInstance.isValid()) return false;
+        voiceInstance.getPlaybackState(out PLAYBACK_STATE state);
+        return state != PLAYBACK_STATE.STOPPED;
+    }
+
+    private void StopVoice()
+{
+    if (!voiceInstance.isValid()) return;
+    voiceInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    voiceInstance.release();
+    voiceInstance.clearHandle();
+}
+
+    // ---------- UI ----------
+    private IEnumerator Fade(float from, float to)
+    {
+        float t = 0f;
+        while (t < fadeDuration)
+        {
+            t += Time.unscaledDeltaTime;
+            canvasGroup.alpha = Mathf.Lerp(from, to, t / fadeDuration);
+            yield return null;
+        }
+        canvasGroup.alpha = to;
     }
 
     private void EndDialog()
     {
         dialogPanel.SetActive(false);
         dialogText.text = "";
-        characterNameText.text = "";
-        currentDialog = null;
-        currentDelays = null;
-        currentLine = 0;
-        currentCharacterName = null;
-        isDialogActive = false;
+        if (characterNameText != null) characterNameText.text = "";
+        IsDialogActive = false;
+        dialogRoutine = null;
+        OnDialogEnded?.Invoke();
     }
 
-    // Fungsi statis untuk dipanggil dari script lain
-    public static void TriggerDialog(DialogData dialogData)
+    public static void TriggerDialog(DialogData data)
     {
-        DialogManager manager = FindObjectOfType<DialogManager>();
-        if (manager != null)
-        {
-            manager.StartDialog(dialogData);
-        }
-        else
-        {
-            Debug.LogError("DialogManager not found in scene!");
-        }
+        if (Instance != null) Instance.StartDialog(data);
+        else Debug.LogError("DialogManager not found in scene!");
     }
 }

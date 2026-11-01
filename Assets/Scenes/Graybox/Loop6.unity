@@ -17286,9 +17286,9 @@ MonoBehaviour:
   isInspect: 0
   Engkol: {fileID: 1967964847}
   EngkolAnim: {fileID: 701928299}
-  dialogData_isBroken: {fileID: 11400000, guid: a33c9af63d10b444398591acd406ac81,
+  dialogData_isBroken: {fileID: 11400000, guid: fd142403bdf0fea43ba13f9c4e3459e5,
     type: 2}
-  dialogData_isFixed: {fileID: 11400000, guid: 39d873bcb57d37949b1415e184257a1d, type: 2}
+  dialogData_isFixed: {fileID: 11400000, guid: e6e666e91d29e9f46bc6fe2abd7f0938, type: 2}
   Complete: {fileID: 782972263}
 --- !u!65 &859838557
 BoxCollider:

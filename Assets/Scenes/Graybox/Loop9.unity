@@ -13728,6 +13728,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
         type: 3}
+      propertyPath: dialogData
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1899837552}
@@ -56317,7 +56322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7f6ed9ef7b13f94686b39d0ac18d1fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 3000
+  totalTime: 60
   criticalWindow: 10
   autoStart: 1
   minIntensity: 0.6
@@ -93836,8 +93841,8 @@ MonoBehaviour:
       Data3: 509811363
       Data4: -581601230
     Path: event:/SFX_Mechanic/Loop9_InsertTape
-  dialogData: {fileID: 11400000, guid: 2bd0716e357b0d647abe811247ff88c4, type: 2}
-  dialogData2: {fileID: 11400000, guid: 7815b40c4cb98504fa8da04dfbeb8f15, type: 2}
+  dialogData: {fileID: 11400000, guid: a0e4e5ecdfd75994e980177391ed6c90, type: 2}
+  dialogData2: {fileID: 11400000, guid: f200d301df736d44c819a8551d0225ba, type: 2}
   tapeRecorderObjek2: {fileID: 662270875}
   tapeRecorderSoundPickup:
     Guid:

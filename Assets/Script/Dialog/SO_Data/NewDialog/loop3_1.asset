@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3336957304dba4e8f33fa7c1602fec, type: 3}
+  m_Name: loop3_1
+  m_EditorClassIdentifier: 
+  characterName: Arthur
+  lines:
+  - text: huh..I'm... back in the living room?.
+    voiceEvent:
+      Guid:
+        Data1: -1796617007
+        Data2: 1260460357
+        Data3: 847903934
+        Data4: 907069559
+      Path: event:/VoiceOver/VO_Loop3_1
+    delay: 0
