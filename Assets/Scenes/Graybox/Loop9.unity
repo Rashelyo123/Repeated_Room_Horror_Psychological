@@ -20156,6 +20156,57 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2064493816}
   m_SourcePrefab: {fileID: 100100000, guid: 1cd993518fe02644d996879455cbc6d3, type: 3}
+--- !u!1 &397518299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 397518301}
+  - component: {fileID: 397518300}
+  m_Layer: 0
+  m_Name: LampManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &397518300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397518299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb35930d7e127147bc1c059b00fcec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamps:
+  - {fileID: 990739260}
+  normalController: {fileID: 9100000, guid: dfb2474d4b4fca24b907702965788970, type: 2}
+  chaseController: {fileID: 9100000, guid: bb62ae9b861d65444b12e6caeb6012a1, type: 2}
+  fmodParam: LampSpeed
+  normalValue: 1
+  chasedValue: 2
+--- !u!4 &397518301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397518299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &397743869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 415254347277724850, guid: 325c6043a314e9f4fa26f5ba94a68e70,
@@ -99945,3 +99996,4 @@ SceneRoots:
   - {fileID: 2474671886760418875}
   - {fileID: 117022399}
   - {fileID: 1100892224}
+  - {fileID: 397518301}
