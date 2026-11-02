@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axis: {x: 0, y: 1, z: 0}
-  speed: -700
+  speed: -1500
   isOn: 1
   accelTime: 2
 --- !u!1 &4024542054550137767
@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 4941472444981913320}
   - component: {fileID: 8303644392976558413}
   - component: {fileID: 6113794675025960327}
+  - component: {fileID: 3734102094282439065}
   m_Layer: 0
   m_Name: Fan
   m_TagString: Untagged
@@ -268,6 +269,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3734102094282439065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5753475712647920722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 103408943
+      Data2: 1127824314
+      Data3: -950429040
+      Data4: 680234397
+    Path: event:/SFX_Mechanic/Fan
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8839805445168268478
 GameObject:
   m_ObjectHideFlags: 0
