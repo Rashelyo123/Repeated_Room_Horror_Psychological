@@ -4785,6 +4785,11 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 1455081587}
+    - target: {fileID: 1506043902987213457, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[2].value
+      value: 
+      objectReference: {fileID: 1666283785}
     - target: {fileID: 4797995016451954529, guid: 444e187186035a54c87b1e1030887c5f,
         type: 3}
       propertyPath: m_Name
@@ -4795,6 +4800,31 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1899837552}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Path
+      value: event:/SFX_Mechanic/Loop7_OpenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data1
+      value: 1163479803
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data2
+      value: 1087635050
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data3
+      value: 1449672356
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465389104517148152, guid: 444e187186035a54c87b1e1030887c5f,
+        type: 3}
+      propertyPath: transitionSound.Guid.Data4
+      value: -419949455
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20859,6 +20889,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1799627369}
+    - targetCorrespondingSourceObject: {fileID: 7906570732806300937, guid: 51ac32c3625a28443803854d202004eb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666283785}
     - targetCorrespondingSourceObject: {fileID: 3712736265787120896, guid: 51ac32c3625a28443803854d202004eb,
         type: 3}
       insertIndex: -1
@@ -28128,6 +28162,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1661940786}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1666283780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7906570732806300937, guid: 51ac32c3625a28443803854d202004eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1253151811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1666283785
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666283780}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1670824082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33060,7 +33121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mirrorTimeline: {fileID: 1878645557}
-  dialogData: {fileID: 11400000, guid: 5259f2dbc7176f7428eb9ac904e3d84d, type: 2}
+  dialogData: {fileID: 11400000, guid: 141dc2b6ec00115418a5c7ecf1dcae97, type: 2}
   playerController: {fileID: 1899837552}
   headBob: {fileID: 1481150144}
   Completel: {fileID: 782972263}
