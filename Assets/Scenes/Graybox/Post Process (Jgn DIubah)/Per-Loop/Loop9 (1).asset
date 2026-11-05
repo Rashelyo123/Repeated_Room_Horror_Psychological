@@ -170,7 +170,7 @@ MonoBehaviour:
     m_Value: 0.7
   clamp:
     m_OverrideState: 1
-    m_Value: 0.12
+    m_Value: 0.2
 --- !u!114 &4128037685389381667
 MonoBehaviour:
   m_ObjectHideFlags: 3

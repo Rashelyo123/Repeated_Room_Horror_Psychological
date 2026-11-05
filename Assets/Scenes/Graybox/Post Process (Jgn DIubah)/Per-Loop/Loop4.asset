@@ -179,13 +179,13 @@ MonoBehaviour:
     m_Value: 0
   quality:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.2
   clamp:
     m_OverrideState: 1
-    m_Value: 0.05
+    m_Value: 0.06
 --- !u!114 &8845458718857040338
 MonoBehaviour:
   m_ObjectHideFlags: 3

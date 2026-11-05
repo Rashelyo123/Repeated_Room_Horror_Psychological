@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Arthur
   lines:
-  - text: ...Emma...
+  - text: ...Emma... My Child... No... i did this...
     voiceEvent:
       Guid:
         Data1: 1756357962
