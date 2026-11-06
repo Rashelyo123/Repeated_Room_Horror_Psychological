@@ -16,6 +16,9 @@ public class JumpscareChaseCut : MonoBehaviour
             tapeRecorder.StopChaseImmediate();
 
         if (AudioManager.Instance != null)
-            AudioManager.Instance.StopRoomTone(true);   // true = cut, false = fade out
+            AudioManager.Instance.StopRoomTone(true);
+
+        foreach (var a in FindObjectsOfType<AudioPlayModularFmod>(true))
+            a.StopImmediate();
     }
 }

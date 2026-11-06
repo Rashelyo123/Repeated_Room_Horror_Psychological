@@ -84,9 +84,9 @@ public class TapeRecorder : Interactable
         tapeRecorderInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         tapeRecorderInstance.release();
 
-        yield return new WaitForSeconds(1f);
-
         DialogManager.TriggerDialog(dialogData);
+        yield return new WaitForSeconds(2f);
+
         Complete.SetActive(true);
 
         StartChase();   // masuk ke ambience dikejar-kejar

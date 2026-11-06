@@ -29,7 +29,9 @@ public class LoopTransitionManager : MonoBehaviour
 
     private void OnFinishTimeline(PlayableDirector director)
     {
-        playerController.enabled = true;
+        if (playerController != null)
+            playerController.enabled = true;
+
         DialogTrigger();
     }
     private void DialogTrigger()
