@@ -58733,6 +58733,13 @@ MonoBehaviour:
   intensityScale: 1
   fallbackIntensity: 1
   playerTag: Player
+  JumpScare:
+    Guid:
+      Data1: 1176138665
+      Data2: 1299083274
+      Data3: -109120087
+      Data4: 818887279
+    Path: event:/System_Adaptive/Loop9HE_Jumpscare
 --- !u!1001 &1290756823
 PrefabInstance:
   m_ObjectHideFlags: 0

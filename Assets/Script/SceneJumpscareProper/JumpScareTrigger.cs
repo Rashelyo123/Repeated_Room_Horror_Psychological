@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 /// Syarat OnTriggerEnter: player punya Rigidbody atau CharacterController,
 /// dan tag "Player" ada di object yang punya collider.
@@ -11,6 +12,8 @@ public class JumpscareTrigger : MonoBehaviour
     [SerializeField, Range(0.1f, 3f)] float intensityScale = 1f;
     [SerializeField] float fallbackIntensity = 1f;
     [SerializeField] string playerTag = "Player";
+     [SerializeField] private EventReference JumpScare;
+
 
     void Reset()
     {
@@ -23,5 +26,6 @@ public class JumpscareTrigger : MonoBehaviour
 
         float baseIntensity = timer != null ? timer.GetIntensity() : fallbackIntensity;
         ghostCam.Trigger(other.transform, baseIntensity * intensityScale, profileOverride);
+         RuntimeManager.PlayOneShotAttached(JumpScare, gameObject);
     }
 }
