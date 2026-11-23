@@ -1,0 +1,12 @@
+label	scene	ambientColor	ambientV	fogOn	fogColor	fogDensity	catatan
+loop 1 - 10-Loop1	Loop1	#373737	0.2157	True	#2E3638	0.01	
+loop 1 - 10-Loop2	Loop2	#323232	0.1961	True	#2E3638	0.02	
+loop 1 - 10-Loop3	Loop3	#323232	0.1961	True	#2E3638	0.03	
+loop 1 - 10-Loop4	Loop4	#000000	0	True	#2E3638	0.04	
+loop 1 - 10-Loop5	Loop5	#2D2D2D	0.1765	True	#2E3638	0.05	
+loop 1 - 10-Loop6	Loop6	#2D2D2D	0.1765	True	#2E3638	0.06	
+loop 1 - 10-Loop7	Loop7	#282828	0.1569	True	#2E3638	0.07	
+loop 1 - 10-Loop8	Loop8	#282828	0.1569	True	#2E3638	0.08	
+loop 1 - 10-Loop9	Loop9	#232323	0.1373	True	#2E3638	0.09	
+loop 1 - 10-Loop10	Loop10	#232323	0.1373	True	#2E3638	0.1	
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	#2D2D2D	0.1765	True	#808080	0.01	

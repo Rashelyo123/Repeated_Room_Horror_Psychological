@@ -1,0 +1,17 @@
+label	scene	volume	profile	temperature	tint	postExposure	contrast	colorFilter	hueShift	saturation
+loop 1 - 10-Loop1	Loop1	Global Volume	Loop1	20	-	-	1	-	-	-
+loop 1 - 10-Loop2	Loop2	Global Volume	Loop2	-10	-	-	4	-	-	-
+loop 1 - 10-Loop3	Loop3	Global Volume	Loop3	-20	-	-	7	-	-	-
+loop 1 - 10-Loop4	Loop4	Global Volume	Loop4	-30	-	-	10	-	-	-
+loop 1 - 10-Loop5	Loop5	Global Volume	Loop5	-40	-	-	13	-	-	-
+loop 1 - 10-Loop6	Loop6	Global Volume	Loop6	-50	-	-	16	-	-	-
+loop 1 - 10-Loop7	Loop7	Global Volume	Loop7	-60	-	-	19	-	-	-
+loop 1 - 10-Loop8	Loop8	Global Volume	Loop8	-70	-	-	22	-	-	-
+loop 1 - 10-Loop9	Loop9	Global Volume (MainRoom2)	Loop9 (2)	-54	-	-	25	-	-	-20
+loop 1 - 10-Loop9	Loop9	Global Volume (RoomLoop1)	Loop9_RoomLoop1	-60	-	-	25	-	-	-20
+loop 1 - 10-Loop9	Loop9	Global Volume (RoomLoop2)	Loop9_RoomLoop2	-60	-	-	25	-	-	-20
+loop 1 - 10-Loop9	Loop9	Global Volume (RoomLoop3)	Loop9_RoomLoop3	-60	-	-	25	-	-	-20
+loop 1 - 10-Loop9	Loop9	Global Volume (MainRoom3)	Loop9 (3)	-60	-	0.1	25	-	-	-20
+loop 1 - 10-Loop9	Loop9	Global Volume (MainRoom)	Loop9 (1)	-54	-	-	25	-	-	-20
+loop 1 - 10-Loop10	Loop10	Global Volume	Loop10	-80	-	-	-	-	-	-75
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Global Volume	Loop1	20	-	-	1	-	-	-

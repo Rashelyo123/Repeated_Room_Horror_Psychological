@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.9344037, g: 0.95083266, b: 0.9924528, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: f6e9a18989b018340b77b7c6dc2d7ee9, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -780,9 +780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.69
-  scattering: 0.2
-  radius: 0.203
+  anisotropy: 0.5
+  scattering: 0.3
+  radius: 0
 --- !u!114 &61377823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,8 +818,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.7
-  m_Range: 6
+  m_Intensity: 1
+  m_Range: 5
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
   m_CookieSize: 10
@@ -1596,7 +1596,7 @@ PrefabInstance:
     - target: {fileID: 4196209852656858821, guid: d3797f8f2586c0348bfe2b0c60a8050c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.513869
+      value: 10.741
       objectReference: {fileID: 0}
     - target: {fileID: 4196209852656858821, guid: d3797f8f2586c0348bfe2b0c60a8050c,
         type: 3}
@@ -2363,9 +2363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.69
-  scattering: 0.2
-  radius: 0.203
+  anisotropy: 0.5
+  scattering: 0.3
+  radius: 0
 --- !u!114 &162217888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,8 +2401,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.7
-  m_Range: 6
+  m_Intensity: 1
+  m_Range: 5
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
   m_CookieSize: 10
@@ -10083,9 +10083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.69
-  scattering: 0.2
-  radius: 0.203
+  anisotropy: 0.5
+  scattering: 0.3
+  radius: 0
 --- !u!114 &534935116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10121,8 +10121,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.7
-  m_Range: 6
+  m_Intensity: 1
+  m_Range: 5
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
   m_CookieSize: 10
@@ -10445,7 +10445,7 @@ PrefabInstance:
     - target: {fileID: 2646535160704261014, guid: 7139c575f75b46a42811217f048f5a80,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.342937
+      value: 22.316
       objectReference: {fileID: 0}
     - target: {fileID: 2646535160704261014, guid: 7139c575f75b46a42811217f048f5a80,
         type: 3}
@@ -11897,9 +11897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.79
-  scattering: 0.51
-  radius: 0.203
+  anisotropy: 0.7
+  scattering: 0.7
+  radius: 0.5
 --- !u!114 &593366305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11935,13 +11935,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
-  m_Range: 7
-  m_SpotAngle: 170.16052
-  m_InnerSpotAngle: 46.27744
+  m_Intensity: 2
+  m_Range: 5
+  m_SpotAngle: 140
+  m_InnerSpotAngle: 100
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -15355,8 +15355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.65
-  scattering: 2.4
+  anisotropy: 0.7
+  scattering: 0.7
   radius: 0.203
 --- !u!114 &788686476
 MonoBehaviour:
@@ -15393,10 +15393,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.5
-  m_Range: 6
-  m_SpotAngle: 112.45217
-  m_InnerSpotAngle: 42.26976
+  m_Intensity: 2
+  m_Range: 5
+  m_SpotAngle: 140
+  m_InnerSpotAngle: 100
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -49479,9 +49479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.81
-  scattering: 0.4
-  radius: 0.203
+  anisotropy: 0.8
+  scattering: 0.3
+  radius: 0.5
 --- !u!114 &1753597675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49517,19 +49517,19 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.15
-  m_Range: 6
+  m_Intensity: 1.5
+  m_Range: 5
   m_SpotAngle: 86.16599
   m_InnerSpotAngle: 33.812256
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.473
+    m_Strength: 0.3
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.099999994
+    m_NearPlane: 0.05
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -54646,8 +54646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anisotropy: 0.63
-  scattering: 0.2
+  anisotropy: 0
+  scattering: 0.3
   radius: 0.203
 --- !u!114 &1959744524
 MonoBehaviour:
@@ -54684,13 +54684,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.84
+  m_Intensity: 2
   m_Range: 6
   m_SpotAngle: 179
   m_InnerSpotAngle: 179
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1

@@ -1,0 +1,117 @@
+label	scene	path	type	intensity	range	color
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Add. Light (1)/Lampu Meja Tengah Lorong/Point Light	Point	1	3	#EADEA5
+loop 1 - 10-Loop1	Loop1	Main Light (1)/ Lampu Lorong Tengah/Lorong Tengah	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lampu Ruang Keluarga/Lampu Keluarga	Point	1	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop1	Loop1	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Add. Light (1)/Lampu Meja Radio/Point Light	Point	1	3	#FFEA8A
+loop 1 - 10-Loop2	Loop2	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Main Light (1)/ Lampu Lorong Tengah/Lorong Tengah	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop2	Loop2	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Kamar Utama/Lampu Kamar Utama	Point	0.59	9.03	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Add. Light (1)/Lampu Meja Radio/Point Light	Point	1	3	#FFEA88
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Add. Light (1)/Lampu Meja Panjang TV/Point Light	Point	1	3	#FFEA8A
+loop 1 - 10-Loop3	Loop3	Add. Light (1)/Lampu Meja Tengah Lorong/Point Light	Point	1	3	#FFE880
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Ruang Keluarga/Lampu Keluarga	Point	2	6	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop3	Loop3	Main Light (1)/ Lampu Lorong Tengah/Lorong Tengah	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Interractable/Senter/Spot Light	Spot	5	15.37	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light (2)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Add. Light (1)/Red_Meter	Point	0.005	2	#FF6E30
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light (3)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (4)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (5)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (2)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light (5)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (1)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light (1)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (3)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela/Spot Light (6)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light (4)	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop4	Loop4	Properties/Jendela (1)/Spot Light	Spot	5	10	#FFFFFF
+loop 1 - 10-Loop5	Loop5	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop5	Loop5	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop5	Loop5	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop5	Loop5	Add. Light (1)/Lampu Kamar Mandi/Lampu Toilet	Point	2	6	#FF0000
+loop 1 - 10-Loop5	Loop5	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop5	Loop5	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lampu Kamar Anak/Kamar Anak	Point	2	6	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/ Lampu Lorong Tengah/Lorong Tengah	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Add. Light (1)/Lampu Meja Radio/Point Light	Point	1	3	#FFEB8C
+loop 1 - 10-Loop6	Loop6	Add. Light (1)/Lampu Meja Tinggi KM Anak/Point Light (1)	Point	1	3	#FFE97F
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop6	Loop6	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/ Lampu Lorong Tengah/Lorong Tengah	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop7	Loop7	Lampu Kamar Dapur/Lampu Dapur	Point	2	6	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lampu Kamar Mandi/Lampu Toilet	Point	2	6	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Add. Light (1)/Lampu Meja Tengah Lorong/Point Light	Point	1	3	#FFE97D
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop8	Loop8	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop9	Loop9	PlayerDieJumpscare 1/Double Leg Takedown - Attacker/mixamorig:Hips/Point Light	Point	1	10	#8E1919
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	4.2	#FF0400
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFB500
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	4.07	#FFB500
+loop 1 - 10-Loop9	Loop9	Add. Light (1)/Lampu Meja Panjang TV/Point Light	Point	1	3	#FFD300
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FF0000
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	4.2	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	4.2	#FF1C1C
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FF0000
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	4.2	#FF1C1C
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lampu Ujung Lorong (1)/Lorong Pintu Akhir	Spot	2	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	4.2	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lampu Ujung Lorong (1)/Lorong Pintu Akhir	Spot	2	5	#FF0D00
+loop 1 - 10-Loop9	Loop9	RoomLoop1/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	4.2	#FF1C1C
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lampu Ruang Keluarga/Lampu Keluarga	Point	1	6	#FFFFFF
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	4.2	#FF0400
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	4.2	#FF0400
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFC400
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	4.2	#FF0000
+loop 1 - 10-Loop9	Loop9	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop3/Main Light (2)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FF0000
+loop 1 - 10-Loop9	Loop9	RoomLoop2/Main Light (2)/Lampu Ujung Lorong (1)/Lorong Pintu Akhir	Spot	2	5	#FFB500
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu3	Point	1	5	#FFFFFF
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lampu Kamar Utama/Lampu Kamar Utama	Point	2	6	#FFFFFF
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	2	5	#FFFFFF
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu1	Point	1	5	#FFFFFF
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.5	5	#FFFFFF
+loop 1 - 10-Loop10	Loop10	Main Light (1)/Lampu Ruang Tamu/Lampu Tamu2	Point	1	5	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Kamar Gudang/Lampu Gudang	Point	1.84	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Kamar Anak/Kamar Anak	Point	1.84	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Kamar Utama/Lampu Kamar Utama	Point	1.84	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Ruang Tamu/Lampu Tamu1	Point	0.92	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Ruang Keluarga/Lampu Keluarga	Point	1.92	5.25	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Kamar Dapur/Lampu Dapur	Point	1.84	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Kamar Mandi/Lampu Toilet	Point	1.84	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Ruang Tamu/Lampu Tamu2	Point	0.92	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Ruang Tamu/Lampu Tamu3	Point	0.92	4.2	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lantern/Armature/Bone/Bone.001/Bone.002/Bone.003/Bone.004/Bone.005/Bone.005_end/Lorong Ujung	Point	1.02	4.92	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Add. Light/Lampu Meja Panjang TV/Point Light	Point	0.25	1.5	#EADEA5
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Add. Light/Lampu Meja Tengah Lorong/Point Light	Point	0.16	2.33	#EADEA5
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/ Lampu Lorong Tengah/Lorong Tengah	Spot	3.32	4.07	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Main Light/Lampu Ujung Lorong/Lorong Pintu Akhir	Spot	0.94	4.07	#FFFFFF
+loop 1 - 10-Loop1 (GAJADI)	Loop1 (GAJADI)	Add. Light/Lampu Meja Radio/Point Light	Point	0.16	2.33	#EADEA5
