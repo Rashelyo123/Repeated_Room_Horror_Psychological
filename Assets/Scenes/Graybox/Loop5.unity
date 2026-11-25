@@ -43507,7 +43507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpscareTimeline: {fileID: 1286629255}
   triggerOnce: 1
-  requiredZoomDuration: 1
+  requiredZoomDuration: 0.14
   playerCamera: {fileID: 1602422343}
   doorTarget: {fileID: 1683351614}
   lookDotThreshold: 0.1

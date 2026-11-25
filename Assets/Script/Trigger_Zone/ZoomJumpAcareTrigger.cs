@@ -82,8 +82,8 @@ public class ZoomJumpscareTrigger : MonoBehaviour
     {
         hasTriggered = true;
 
-        if (playerController != null)
-            playerController.enabled = false;
+        //if (playerController != null)
+        //    playerController.enabled = false;
 
         jumpscareTimeline.stopped += OnJumpscareFinished;
         jumpscareTimeline.Play();
@@ -95,7 +95,7 @@ public class ZoomJumpscareTrigger : MonoBehaviour
     {
         jumpscareTimeline.stopped -= OnJumpscareFinished;
 
-        if (playerController != null)
-            playerController.enabled = true;
+        //if (playerController != null)
+        //    playerController.enabled = true;
     }
 }
